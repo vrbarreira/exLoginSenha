@@ -1,5 +1,4 @@
 #include "MyForm.h"
-#include "Dados.h"
 namespace Project1 {
 	using namespace System;
 	using namespace System::Windows::Forms;
