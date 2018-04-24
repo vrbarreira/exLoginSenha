@@ -164,23 +164,6 @@
   <ItemGroup>
     <ClInclude Include="Dadosa.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Xml Include="docs\MySqlCommand.xml" />
-    <Xml Include="docs\MySqlCommandBuilder.xml" />
-    <Xml Include="docs\MySqlConnection.xml" />
-    <Xml Include="docs\MySqlConnectionStringBuilder.xml" />
-    <Xml Include="docs\MySqlDataAdapter.xml" />
-    <Xml Include="docs\MySqlDataReader.xml" />
-    <Xml Include="docs\MySqlException.xml" />
-    <Xml Include="docs\MySqlHelper.xml" />
-    <Xml Include="docs\MySqlParameter.xml" />
-    <Xml Include="docs\MySqlParameterCollection.xml" />
-    <Xml Include="docs\MySqlTransaction.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
