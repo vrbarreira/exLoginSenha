@@ -1,8 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Janela4.h"
-#include "Janela3.h"
-#include "Janela2.h"
+
 
 
 namespace Project1 {
