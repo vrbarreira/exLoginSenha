@@ -50,7 +50,6 @@ namespace Project1 {
 
 
 	private: System::Windows::Forms::TextBox^  tb_login;
-
 	private: System::Windows::Forms::Label^  lb_login;
 	private: System::Windows::Forms::Label^  lb_senha;
 	private: System::Windows::Forms::TextBox^  tb_senha;
