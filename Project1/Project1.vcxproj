@@ -150,12 +150,6 @@
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Janela2.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="Janela3.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="Janela4.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -169,6 +163,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Janela4.resx">
+      <DependentUpon>Janela4.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>

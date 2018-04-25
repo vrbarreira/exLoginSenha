@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
+#include "Janela4.h"
+#include "Janela3.h"
 #include "Janela2.h"
+
 
 namespace Project1 {
 	
@@ -36,10 +39,15 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::Button^  button2;
-	private: System::Windows::Forms::Button^  button3;
+	private: System::Windows::Forms::Label^  lb_titulo;
+	protected:
+
+	private: System::Windows::Forms::Button^  bt_janela2;
+	private: System::Windows::Forms::Button^  bt_janela3;
+
+
+
+
 	private: System::Windows::Forms::TextBox^  tb_login;
 
 	private: System::Windows::Forms::Label^  lb_login;
@@ -47,6 +55,13 @@ namespace Project1 {
 	private: System::Windows::Forms::TextBox^  tb_senha;
 	private: System::Windows::Forms::Button^  bt_validar;
 	private: System::Windows::Forms::Button^  bt_limpar;
+	private: System::Windows::Forms::Label^  lb_mensagem;
+	private: System::Windows::Forms::TextBox^  tb_mensagem;
+	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^  menuToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  aboutToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  sairToolStripMenuItem;
+
 
 	protected:
 
@@ -63,56 +78,52 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->lb_titulo = (gcnew System::Windows::Forms::Label());
+			this->bt_janela2 = (gcnew System::Windows::Forms::Button());
+			this->bt_janela3 = (gcnew System::Windows::Forms::Button());
 			this->tb_login = (gcnew System::Windows::Forms::TextBox());
 			this->lb_login = (gcnew System::Windows::Forms::Label());
 			this->lb_senha = (gcnew System::Windows::Forms::Label());
 			this->tb_senha = (gcnew System::Windows::Forms::TextBox());
 			this->bt_validar = (gcnew System::Windows::Forms::Button());
 			this->bt_limpar = (gcnew System::Windows::Forms::Button());
+			this->lb_mensagem = (gcnew System::Windows::Forms::Label());
+			this->tb_mensagem = (gcnew System::Windows::Forms::TextBox());
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->menuToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// label1
+			// lb_titulo
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(263, 21);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(68, 13);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Janela Atual:";
-			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
+			this->lb_titulo->AutoSize = true;
+			this->lb_titulo->Location = System::Drawing::Point(263, 21);
+			this->lb_titulo->Name = L"lb_titulo";
+			this->lb_titulo->Size = System::Drawing::Size(35, 13);
+			this->lb_titulo->TabIndex = 0;
+			this->lb_titulo->Text = L"Título";
 			// 
-			// button1
+			// bt_janela2
 			// 
-			this->button1->Location = System::Drawing::Point(86, 66);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(111, 23);
-			this->button1->TabIndex = 1;
-			this->button1->Text = L"Ir para a Janela 2";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			this->bt_janela2->Location = System::Drawing::Point(86, 66);
+			this->bt_janela2->Name = L"bt_janela2";
+			this->bt_janela2->Size = System::Drawing::Size(111, 23);
+			this->bt_janela2->TabIndex = 1;
+			this->bt_janela2->Text = L"Ir para a Janela 2";
+			this->bt_janela2->UseVisualStyleBackColor = true;
+			this->bt_janela2->Click += gcnew System::EventHandler(this, &MyForm::bt_janela2_Click);
 			// 
-			// button2
+			// bt_janela3
 			// 
-			this->button2->Location = System::Drawing::Point(86, 111);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(111, 23);
-			this->button2->TabIndex = 2;
-			this->button2->Text = L"Ir para a Janela 3";
-			this->button2->UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(86, 161);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(111, 23);
-			this->button3->TabIndex = 3;
-			this->button3->Text = L"Ir para a Janela 4";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			this->bt_janela3->Location = System::Drawing::Point(86, 111);
+			this->bt_janela3->Name = L"bt_janela3";
+			this->bt_janela3->Size = System::Drawing::Size(111, 23);
+			this->bt_janela3->TabIndex = 2;
+			this->bt_janela3->Text = L"Ir para a Janela 3";
+			this->bt_janela3->UseVisualStyleBackColor = true;
+			this->bt_janela3->Click += gcnew System::EventHandler(this, &MyForm::bt_janela3_Click);
 			// 
 			// tb_login
 			// 
@@ -129,7 +140,6 @@ namespace Project1 {
 			this->lb_login->Size = System::Drawing::Size(33, 13);
 			this->lb_login->TabIndex = 5;
 			this->lb_login->Text = L"Login";
-			this->lb_login->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
 			// 
 			// lb_senha
 			// 
@@ -159,6 +169,7 @@ namespace Project1 {
 			this->bt_validar->TabIndex = 8;
 			this->bt_validar->Text = L"Validar";
 			this->bt_validar->UseVisualStyleBackColor = true;
+			this->bt_validar->Click += gcnew System::EventHandler(this, &MyForm::bt_validar_Click);
 			// 
 			// bt_limpar
 			// 
@@ -170,41 +181,121 @@ namespace Project1 {
 			this->bt_limpar->UseVisualStyleBackColor = true;
 			this->bt_limpar->Click += gcnew System::EventHandler(this, &MyForm::bt_limpar_Click);
 			// 
+			// lb_mensagem
+			// 
+			this->lb_mensagem->AutoSize = true;
+			this->lb_mensagem->Location = System::Drawing::Point(392, 197);
+			this->lb_mensagem->Name = L"lb_mensagem";
+			this->lb_mensagem->Size = System::Drawing::Size(105, 13);
+			this->lb_mensagem->TabIndex = 10;
+			this->lb_mensagem->Text = L"Resultado Validação";
+			// 
+			// tb_mensagem
+			// 
+			this->tb_mensagem->Location = System::Drawing::Point(395, 213);
+			this->tb_mensagem->Multiline = true;
+			this->tb_mensagem->Name = L"tb_mensagem";
+			this->tb_mensagem->Size = System::Drawing::Size(202, 38);
+			this->tb_mensagem->TabIndex = 11;
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuToolStripMenuItem });
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(637, 24);
+			this->menuStrip1->TabIndex = 12;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// menuToolStripMenuItem
+			// 
+			this->menuToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->aboutToolStripMenuItem,
+					this->sairToolStripMenuItem
+			});
+			this->menuToolStripMenuItem->Name = L"menuToolStripMenuItem";
+			this->menuToolStripMenuItem->Size = System::Drawing::Size(50, 20);
+			this->menuToolStripMenuItem->Text = L"Menu";
+			// 
+			// aboutToolStripMenuItem
+			// 
+			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
+			this->aboutToolStripMenuItem->Size = System::Drawing::Size(107, 22);
+			this->aboutToolStripMenuItem->Text = L"About";
+			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::aboutToolStripMenuItem_Click);
+			// 
+			// sairToolStripMenuItem
+			// 
+			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
+			this->sairToolStripMenuItem->Size = System::Drawing::Size(107, 22);
+			this->sairToolStripMenuItem->Text = L"Sair";
+			this->sairToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::sairToolStripMenuItem_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(637, 263);
+			this->Controls->Add(this->tb_mensagem);
+			this->Controls->Add(this->lb_mensagem);
 			this->Controls->Add(this->bt_limpar);
 			this->Controls->Add(this->bt_validar);
 			this->Controls->Add(this->tb_senha);
 			this->Controls->Add(this->lb_senha);
 			this->Controls->Add(this->lb_login);
 			this->Controls->Add(this->tb_login);
-			this->Controls->Add(this->button3);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label1);
+			this->Controls->Add(this->bt_janela3);
+			this->Controls->Add(this->bt_janela2);
+			this->Controls->Add(this->lb_titulo);
+			this->Controls->Add(this->menuStrip1);
+			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"Formulário Inicial";
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
-	
-	}
-	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		
-		
-	}
-	private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
-	}
-private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
-}
-private: System::Void bt_limpar_Click(System::Object^  sender, System::EventArgs^  e) {
 
+private: System::Void bt_limpar_Click(System::Object^  sender, System::EventArgs^  e) {
+	this->tb_login->Text = L"";
+	this->tb_senha->Text = L"";
+	this->tb_mensagem->Text = L"";
+	tb_login->BackColor = System::Drawing::Color::White;
+	tb_senha->BackColor = System::Drawing::Color::White;
+
+}
+private: System::Void bt_validar_Click(System::Object^  sender, System::EventArgs^  e) {
+	if ((this->tb_login->Text == String::Empty) && (this -> tb_senha->Text == String::Empty)) {
+		this->tb_mensagem->Text += L"Campos de Login e senha vazios\n";
+		tb_login->BackColor = System::Drawing::Color::Yellow;
+		tb_senha->BackColor = System::Drawing::Color::Yellow;
+		MessageBox::Show("Preencha o login e senha!");
+	}
+	else if (this->tb_login->Text == String::Empty) {
+		this->tb_mensagem->Text  += L"Campo de Login Vazio\n";
+		tb_senha->BackColor = System::Drawing::Color::Yellow;
+	}
+	else if (this->tb_senha->Text == String::Empty) {
+		this->tb_mensagem->Text += L"Campo de Senha Vazio\n";
+		tb_senha->BackColor = System::Drawing::Color::Yellow;
+	}
+}
+private: System::Void bt_janela2_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void bt_janela3_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+
+private: System::Void sairToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	Application::Exit();
+}
+private: System::Void aboutToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	Janela4^ caixa = gcnew Janela4();
+	caixa->ShowDialog();
+}
+private: System::Void bt_janela4_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
