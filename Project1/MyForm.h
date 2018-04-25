@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Janela4.h"
-
+#include "CaixaDeDialogo.h"
 
 
 namespace Project1 {
@@ -38,11 +38,11 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^  lb_titulo;
+
 	protected:
 
-	private: System::Windows::Forms::Button^  bt_janela2;
-	private: System::Windows::Forms::Button^  bt_janela3;
+
+
 
 
 
@@ -60,6 +60,7 @@ namespace Project1 {
 	private: System::Windows::Forms::ToolStripMenuItem^  menuToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  aboutToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  sairToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  exCaixaDeDialogoToolStripMenuItem;
 
 
 	protected:
@@ -77,9 +78,6 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->lb_titulo = (gcnew System::Windows::Forms::Label());
-			this->bt_janela2 = (gcnew System::Windows::Forms::Button());
-			this->bt_janela3 = (gcnew System::Windows::Forms::Button());
 			this->tb_login = (gcnew System::Windows::Forms::TextBox());
 			this->lb_login = (gcnew System::Windows::Forms::Label());
 			this->lb_senha = (gcnew System::Windows::Forms::Label());
@@ -92,41 +90,13 @@ namespace Project1 {
 			this->menuToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->exCaixaDeDialogoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// lb_titulo
-			// 
-			this->lb_titulo->AutoSize = true;
-			this->lb_titulo->Location = System::Drawing::Point(263, 21);
-			this->lb_titulo->Name = L"lb_titulo";
-			this->lb_titulo->Size = System::Drawing::Size(35, 13);
-			this->lb_titulo->TabIndex = 0;
-			this->lb_titulo->Text = L"Título";
-			// 
-			// bt_janela2
-			// 
-			this->bt_janela2->Location = System::Drawing::Point(86, 66);
-			this->bt_janela2->Name = L"bt_janela2";
-			this->bt_janela2->Size = System::Drawing::Size(111, 23);
-			this->bt_janela2->TabIndex = 1;
-			this->bt_janela2->Text = L"Ir para a Janela 2";
-			this->bt_janela2->UseVisualStyleBackColor = true;
-			this->bt_janela2->Click += gcnew System::EventHandler(this, &MyForm::bt_janela2_Click);
-			// 
-			// bt_janela3
-			// 
-			this->bt_janela3->Location = System::Drawing::Point(86, 111);
-			this->bt_janela3->Name = L"bt_janela3";
-			this->bt_janela3->Size = System::Drawing::Size(111, 23);
-			this->bt_janela3->TabIndex = 2;
-			this->bt_janela3->Text = L"Ir para a Janela 3";
-			this->bt_janela3->UseVisualStyleBackColor = true;
-			this->bt_janela3->Click += gcnew System::EventHandler(this, &MyForm::bt_janela3_Click);
-			// 
 			// tb_login
 			// 
-			this->tb_login->Location = System::Drawing::Point(443, 68);
+			this->tb_login->Location = System::Drawing::Point(96, 53);
 			this->tb_login->Name = L"tb_login";
 			this->tb_login->Size = System::Drawing::Size(100, 20);
 			this->tb_login->TabIndex = 4;
@@ -134,7 +104,7 @@ namespace Project1 {
 			// lb_login
 			// 
 			this->lb_login->AutoSize = true;
-			this->lb_login->Location = System::Drawing::Point(392, 71);
+			this->lb_login->Location = System::Drawing::Point(45, 56);
 			this->lb_login->Name = L"lb_login";
 			this->lb_login->Size = System::Drawing::Size(33, 13);
 			this->lb_login->TabIndex = 5;
@@ -143,7 +113,7 @@ namespace Project1 {
 			// lb_senha
 			// 
 			this->lb_senha->AutoSize = true;
-			this->lb_senha->Location = System::Drawing::Point(389, 111);
+			this->lb_senha->Location = System::Drawing::Point(42, 96);
 			this->lb_senha->Name = L"lb_senha";
 			this->lb_senha->Size = System::Drawing::Size(37, 17);
 			this->lb_senha->TabIndex = 6;
@@ -152,7 +122,7 @@ namespace Project1 {
 			// 
 			// tb_senha
 			// 
-			this->tb_senha->Location = System::Drawing::Point(443, 111);
+			this->tb_senha->Location = System::Drawing::Point(96, 96);
 			this->tb_senha->Name = L"tb_senha";
 			this->tb_senha->PasswordChar = '*';
 			this->tb_senha->RightToLeft = System::Windows::Forms::RightToLeft::No;
@@ -162,7 +132,7 @@ namespace Project1 {
 			// 
 			// bt_validar
 			// 
-			this->bt_validar->Location = System::Drawing::Point(395, 161);
+			this->bt_validar->Location = System::Drawing::Point(48, 146);
 			this->bt_validar->Name = L"bt_validar";
 			this->bt_validar->Size = System::Drawing::Size(75, 23);
 			this->bt_validar->TabIndex = 8;
@@ -172,7 +142,7 @@ namespace Project1 {
 			// 
 			// bt_limpar
 			// 
-			this->bt_limpar->Location = System::Drawing::Point(493, 161);
+			this->bt_limpar->Location = System::Drawing::Point(146, 146);
 			this->bt_limpar->Name = L"bt_limpar";
 			this->bt_limpar->Size = System::Drawing::Size(75, 23);
 			this->bt_limpar->TabIndex = 9;
@@ -183,15 +153,15 @@ namespace Project1 {
 			// lb_mensagem
 			// 
 			this->lb_mensagem->AutoSize = true;
-			this->lb_mensagem->Location = System::Drawing::Point(392, 197);
+			this->lb_mensagem->Location = System::Drawing::Point(93, 182);
 			this->lb_mensagem->Name = L"lb_mensagem";
-			this->lb_mensagem->Size = System::Drawing::Size(105, 13);
+			this->lb_mensagem->Size = System::Drawing::Size(98, 13);
 			this->lb_mensagem->TabIndex = 10;
-			this->lb_mensagem->Text = L"Resultado Validação";
+			this->lb_mensagem->Text = L"Mensagens de Log";
 			// 
 			// tb_mensagem
 			// 
-			this->tb_mensagem->Location = System::Drawing::Point(395, 213);
+			this->tb_mensagem->Location = System::Drawing::Point(48, 198);
 			this->tb_mensagem->Multiline = true;
 			this->tb_mensagem->Name = L"tb_mensagem";
 			this->tb_mensagem->Size = System::Drawing::Size(202, 38);
@@ -202,15 +172,15 @@ namespace Project1 {
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(637, 24);
+			this->menuStrip1->Size = System::Drawing::Size(290, 24);
 			this->menuStrip1->TabIndex = 12;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
 			// menuToolStripMenuItem
 			// 
-			this->menuToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+			this->menuToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->aboutToolStripMenuItem,
-					this->sairToolStripMenuItem
+					this->exCaixaDeDialogoToolStripMenuItem, this->sairToolStripMenuItem
 			});
 			this->menuToolStripMenuItem->Name = L"menuToolStripMenuItem";
 			this->menuToolStripMenuItem->Size = System::Drawing::Size(50, 20);
@@ -219,22 +189,29 @@ namespace Project1 {
 			// aboutToolStripMenuItem
 			// 
 			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
-			this->aboutToolStripMenuItem->Size = System::Drawing::Size(107, 22);
+			this->aboutToolStripMenuItem->Size = System::Drawing::Size(179, 22);
 			this->aboutToolStripMenuItem->Text = L"About";
 			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::aboutToolStripMenuItem_Click);
 			// 
 			// sairToolStripMenuItem
 			// 
 			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
-			this->sairToolStripMenuItem->Size = System::Drawing::Size(107, 22);
+			this->sairToolStripMenuItem->Size = System::Drawing::Size(179, 22);
 			this->sairToolStripMenuItem->Text = L"Sair";
 			this->sairToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::sairToolStripMenuItem_Click);
+			// 
+			// exCaixaDeDialogoToolStripMenuItem
+			// 
+			this->exCaixaDeDialogoToolStripMenuItem->Name = L"exCaixaDeDialogoToolStripMenuItem";
+			this->exCaixaDeDialogoToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->exCaixaDeDialogoToolStripMenuItem->Text = L"Ex. Caixa de Dialogo";
+			this->exCaixaDeDialogoToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::exCaixaDeDialogoToolStripMenuItem_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(637, 263);
+			this->ClientSize = System::Drawing::Size(290, 263);
 			this->Controls->Add(this->tb_mensagem);
 			this->Controls->Add(this->lb_mensagem);
 			this->Controls->Add(this->bt_limpar);
@@ -243,13 +220,10 @@ namespace Project1 {
 			this->Controls->Add(this->lb_senha);
 			this->Controls->Add(this->lb_login);
 			this->Controls->Add(this->tb_login);
-			this->Controls->Add(this->bt_janela3);
-			this->Controls->Add(this->bt_janela2);
-			this->Controls->Add(this->lb_titulo);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
-			this->Text = L"Formulário Inicial";
+			this->Text = L"Aplicação CLR usando C++";
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -268,17 +242,17 @@ private: System::Void bt_limpar_Click(System::Object^  sender, System::EventArgs
 }
 private: System::Void bt_validar_Click(System::Object^  sender, System::EventArgs^  e) {
 	if ((this->tb_login->Text == String::Empty) && (this -> tb_senha->Text == String::Empty)) {
-		this->tb_mensagem->Text += L"Campos de Login e senha vazios\n";
+		this->tb_mensagem->AppendText("\r\nCampos de Login e senha vazios");
 		tb_login->BackColor = System::Drawing::Color::Yellow;
 		tb_senha->BackColor = System::Drawing::Color::Yellow;
 		MessageBox::Show("Preencha o login e senha!");
 	}
 	else if (this->tb_login->Text == String::Empty) {
-		this->tb_mensagem->Text  += L"Campo de Login Vazio\n";
+		this->tb_mensagem->AppendText("\r\nCampo de Login Vazio");
 		tb_senha->BackColor = System::Drawing::Color::Yellow;
 	}
 	else if (this->tb_senha->Text == String::Empty) {
-		this->tb_mensagem->Text += L"Campo de Senha Vazio\n";
+		this->tb_mensagem->AppendText("\r\nCampo de Senha Vazio");
 		tb_senha->BackColor = System::Drawing::Color::Yellow;
 	}
 }
@@ -295,6 +269,18 @@ private: System::Void aboutToolStripMenuItem_Click(System::Object^  sender, Syst
 	caixa->ShowDialog();
 }
 private: System::Void bt_janela4_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void exCaixaDeDialogoToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	CaixaDeDialogo^ caixa = gcnew CaixaDeDialogo();
+	caixa->Nome = L"";
+	caixa->Telefone = L"";
+	caixa->Escolaridade = 0;
+
+	if (caixa->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
+		this->tb_mensagem->AppendText("\r\n"+caixa->Nome);
+		this->tb_mensagem->AppendText("\r\n" + caixa->Telefone);
+	}
+
 }
 };
 }

@@ -77,7 +77,7 @@ namespace Project1 {
 			this->lb_titulo->Name = L"lb_titulo";
 			this->lb_titulo->Size = System::Drawing::Size(259, 15);
 			this->lb_titulo->TabIndex = 1;
-			this->lb_titulo->Text = L"Aplicação de formulário usando C++ e Windows CLR";
+			this->lb_titulo->Text = L"Aplicação de formulário usando Windows CLR e C++";
 			// 
 			// bt_ok
 			// 
