@@ -90,8 +90,8 @@ namespace Project1 {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->menuToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exCaixaDeDialogoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -173,7 +173,7 @@ namespace Project1 {
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(290, 24);
+			this->menuStrip1->Size = System::Drawing::Size(317, 24);
 			this->menuStrip1->TabIndex = 12;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -194,13 +194,6 @@ namespace Project1 {
 			this->aboutToolStripMenuItem->Text = L"About";
 			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::aboutToolStripMenuItem_Click);
 			// 
-			// sairToolStripMenuItem
-			// 
-			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
-			this->sairToolStripMenuItem->Size = System::Drawing::Size(179, 22);
-			this->sairToolStripMenuItem->Text = L"Sair";
-			this->sairToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::sairToolStripMenuItem_Click);
-			// 
 			// exCaixaDeDialogoToolStripMenuItem
 			// 
 			this->exCaixaDeDialogoToolStripMenuItem->Name = L"exCaixaDeDialogoToolStripMenuItem";
@@ -208,11 +201,18 @@ namespace Project1 {
 			this->exCaixaDeDialogoToolStripMenuItem->Text = L"Ex. Caixa de Dialogo";
 			this->exCaixaDeDialogoToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::exCaixaDeDialogoToolStripMenuItem_Click);
 			// 
+			// sairToolStripMenuItem
+			// 
+			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
+			this->sairToolStripMenuItem->Size = System::Drawing::Size(179, 22);
+			this->sairToolStripMenuItem->Text = L"Sair";
+			this->sairToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::sairToolStripMenuItem_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(290, 263);
+			this->ClientSize = System::Drawing::Size(317, 263);
 			this->Controls->Add(this->tb_mensagem);
 			this->Controls->Add(this->lb_mensagem);
 			this->Controls->Add(this->bt_limpar);
