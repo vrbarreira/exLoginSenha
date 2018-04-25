@@ -3,7 +3,9 @@
 #include "Janela4.h"
 #include "CaixaDeDialogo.h"
 
-
+/*
+Referência: http://www.visualcplusdotnet.com/visualcplusdotnet21.html
+*/
 namespace Project1 {
 	
 	using namespace System;
