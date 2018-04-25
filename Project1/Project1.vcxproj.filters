@@ -18,9 +18,27 @@
     <ClCompile Include="MyForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Janela2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Janela3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Janela4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Janela2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Janela3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Janela4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

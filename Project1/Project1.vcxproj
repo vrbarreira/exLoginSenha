@@ -144,9 +144,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Janela2.cpp" />
+    <ClCompile Include="Janela3.cpp" />
+    <ClCompile Include="Janela4.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Janela2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Janela3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Janela4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
