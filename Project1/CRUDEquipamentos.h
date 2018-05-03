@@ -89,7 +89,7 @@ namespace Project1 {
 				this->Nome, this->Tipo,
 					this->Custo
 			});
-			this->dataGridView1->Location = System::Drawing::Point(12, 29);
+			this->dataGridView1->Location = System::Drawing::Point(12, 12);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->Size = System::Drawing::Size(352, 236);
 			this->dataGridView1->TabIndex = 0;
@@ -130,7 +130,7 @@ namespace Project1 {
 			// 
 			// btn_Excluir
 			// 
-			this->btn_Excluir->Location = System::Drawing::Point(475, 227);
+			this->btn_Excluir->Location = System::Drawing::Point(469, 210);
 			this->btn_Excluir->Name = L"btn_Excluir";
 			this->btn_Excluir->Size = System::Drawing::Size(128, 38);
 			this->btn_Excluir->TabIndex = 3;
@@ -148,7 +148,7 @@ namespace Project1 {
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Controls->Add(this->btn_Cadastro);
 			this->groupBox1->Controls->Add(this->btn_Alterar);
-			this->groupBox1->Location = System::Drawing::Point(380, 29);
+			this->groupBox1->Location = System::Drawing::Point(384, 12);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(305, 192);
 			this->groupBox1->TabIndex = 4;
@@ -208,7 +208,7 @@ namespace Project1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(701, 281);
+			this->ClientSize = System::Drawing::Size(701, 263);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->btn_Excluir);
 			this->Controls->Add(this->dataGridView1);

@@ -154,7 +154,7 @@
     <ClInclude Include="CaixaDeDialogo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="CRUD_Materiais.h">
+    <ClInclude Include="CRUDMateriais.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Janela4.h">
@@ -163,7 +163,7 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="CRUD_Equip.h">
+    <ClInclude Include="CRUDEquipamentos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -176,11 +176,11 @@
     <EmbeddedResource Include="CaixaDeDialogo.resx">
       <DependentUpon>CaixaDeDialogo.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRUD_Equip.resx">
-      <DependentUpon>CRUD_Equip.h</DependentUpon>
+    <EmbeddedResource Include="CRUDEquipamentos.resx">
+      <DependentUpon>CRUDEquipamentos.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRUD_Materiais.resx">
-      <DependentUpon>CRUD_Materiais.h</DependentUpon>
+    <EmbeddedResource Include="CRUDMateriais.resx">
+      <DependentUpon>CRUDMateriais.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Janela4.resx">
       <DependentUpon>Janela4.h</DependentUpon>

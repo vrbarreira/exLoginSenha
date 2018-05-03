@@ -41,10 +41,10 @@
     <ClInclude Include="CaixaDeDialogo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CRUD_Equip.h">
+    <ClInclude Include="CRUDEquipamentos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CRUD_Materiais.h">
+    <ClInclude Include="CRUDMateriais.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -58,7 +58,10 @@
     <EmbeddedResource Include="CaixaDeDialogo.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRUD_Equip.resx">
+    <EmbeddedResource Include="CRUDEquipamentos.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDMateriais.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>
