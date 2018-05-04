@@ -3,6 +3,7 @@
 #include "CRUDEquipes.h"
 #include "CRUDMateriais.h"
 #include "CRUDFuncionarios.h"
+#include "FaturasMensais.h"
 
 namespace Project1 {
 
@@ -157,6 +158,7 @@ namespace Project1 {
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"Faturas\r\nMensais";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MenuPrincipal::button5_Click);
 			// 
 			// groupBox3
 			// 
@@ -203,6 +205,10 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 	CRUDFuncionarios^ crud = gcnew CRUDFuncionarios();
 	crud->ShowDialog();
+}
+private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
+	FaturasMensais^ tela = gcnew FaturasMensais();
+	tela->ShowDialog();
 }
 };
 }
