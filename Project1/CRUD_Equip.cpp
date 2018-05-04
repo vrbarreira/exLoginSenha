@@ -1,2 +1,1 @@
-#include "CRUD_Equip.h"
-
+#include "CRUDEquipamentos.h"
