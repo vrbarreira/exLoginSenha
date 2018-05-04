@@ -33,6 +33,9 @@
     <ClCompile Include="CRUDEquipes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CRUDFuncionarios.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -56,6 +59,9 @@
     <ClInclude Include="CRUDEquipes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CRUDFuncionarios.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
@@ -71,6 +77,9 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUDMateriais.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDEquipes.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

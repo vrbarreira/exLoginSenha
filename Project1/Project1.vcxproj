@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClCompile Include="CaixaDeDialogo.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
+    <ClCompile Include="CRUDFuncionarios.cpp" />
     <ClCompile Include="CRUD_Materiais.cpp" />
     <ClCompile Include="Janela4.cpp" />
     <ClCompile Include="MyForm.cpp" />
@@ -156,6 +157,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CRUDEquipes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CRUDFuncionarios.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CRUDMateriais.h">
@@ -186,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUDEquipes.resx">
       <DependentUpon>CRUDEquipes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDFuncionarios.resx">
+      <DependentUpon>CRUDFuncionarios.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUDMateriais.resx">
       <DependentUpon>CRUDMateriais.h</DependentUpon>
