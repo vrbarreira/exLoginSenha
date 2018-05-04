@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Janela4.h"
 #include "CaixaDeDialogo.h"
+#include "MenuPrincipal.h"
 
 /*
 Referência: http://www.visualcplusdotnet.com/visualcplusdotnet21.html
@@ -255,6 +256,11 @@ private: System::Void bt_validar_Click(System::Object^  sender, System::EventArg
 	else if (this->tb_senha->Text == String::Empty) {
 		this->tb_mensagem->AppendText("\r\nCampo de Senha Vazio");
 		tb_senha->BackColor = System::Drawing::Color::Yellow;
+	}
+	else {
+		MenuPrincipal^ menuPrc = gcnew MenuPrincipal();
+		this->Hide();
+		menuPrc->Show();
 	}
 }
 private: System::Void bt_janela2_Click(System::Object^  sender, System::EventArgs^  e) {

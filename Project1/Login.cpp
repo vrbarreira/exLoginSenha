@@ -1,4 +1,4 @@
-#include "MyForm.h"
+#include "Login.h"
 namespace Project1 {
 	using namespace System;
 	using namespace System::Windows::Forms;
@@ -7,7 +7,10 @@ namespace Project1 {
 	{
 		Application::EnableVisualStyles();
 		Application::SetCompatibleTextRenderingDefault(false);
-		Application::Run(gcnew MyForm);
-		
+		//Application::Run(gcnew MyForm);
+
+		MyForm^ telaLogin = gcnew MyForm();
+		telaLogin->Show();
+		Application::Run();
 	}
 }

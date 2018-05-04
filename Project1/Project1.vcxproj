@@ -149,7 +149,8 @@
     <ClCompile Include="CRUDFuncionarios.cpp" />
     <ClCompile Include="CRUD_Materiais.cpp" />
     <ClCompile Include="Janela4.cpp" />
-    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MenuPrincipal.cpp" />
+    <ClCompile Include="Login.cpp" />
     <ClCompile Include="CRUD_Equip.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -168,7 +169,10 @@
     <ClInclude Include="Janela4.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="MyForm.h">
+    <ClInclude Include="MenuPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CRUDEquipamentos.h">
@@ -200,8 +204,11 @@
     <EmbeddedResource Include="Janela4.resx">
       <DependentUpon>Janela4.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForm.resx">
-      <DependentUpon>MyForm.h</DependentUpon>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
