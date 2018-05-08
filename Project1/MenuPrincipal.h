@@ -177,7 +177,6 @@ namespace Project1 {
 			this->Controls->Add(this->groupBox3);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->groupBox1);
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MenuPrincipal";
 			this->Text = L"InfoBuraco";
 			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &MenuPrincipal::MenuPrincipal_FormClosed);
