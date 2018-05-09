@@ -45,6 +45,9 @@
     <ClCompile Include="CadastroBuracos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExemploDeFotos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -80,6 +83,9 @@
     <ClInclude Include="CadastroBuracos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ExemploDeFotos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Janela4.resx">
@@ -110,6 +116,9 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroBuracos.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeFotos.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>
