@@ -109,6 +109,9 @@
     <EmbeddedResource Include="FaturasMensais.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastroBuracos.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="View.rc">
