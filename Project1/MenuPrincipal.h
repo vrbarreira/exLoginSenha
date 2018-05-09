@@ -5,6 +5,8 @@
 #include "CRUDFuncionarios.h"
 #include "FaturasMensais.h"
 #include "CadastroBuracos.h"
+#include "OSConcluidaNaoReportada.h"
+#include "OSConcluidaReportada.h"
 
 namespace Project1 {
 
@@ -51,6 +53,9 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^  button6;
 	private: System::Windows::Forms::GroupBox^  groupBox3;
 	private: System::Windows::Forms::Button^  btnNovoBuraco;
+	private: System::Windows::Forms::Button^  button9;
+	private: System::Windows::Forms::Button^  button8;
+	private: System::Windows::Forms::Button^  button7;
 
 
 	private:
@@ -75,6 +80,9 @@ namespace Project1 {
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
+			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->btnNovoBuraco = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
@@ -166,17 +174,49 @@ namespace Project1 {
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->button9);
+			this->groupBox3->Controls->Add(this->button8);
+			this->groupBox3->Controls->Add(this->button7);
 			this->groupBox3->Controls->Add(this->btnNovoBuraco);
 			this->groupBox3->Location = System::Drawing::Point(12, 175);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(433, 215);
+			this->groupBox3->Size = System::Drawing::Size(433, 156);
 			this->groupBox3->TabIndex = 2;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"Buracos e Ordens de Serviço";
 			// 
+			// button9
+			// 
+			this->button9->Location = System::Drawing::Point(266, 19);
+			this->button9->Name = L"button9";
+			this->button9->Size = System::Drawing::Size(112, 52);
+			this->button9->TabIndex = 9;
+			this->button9->Text = L"Ordens de serviço concluídas e reportadas";
+			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Click += gcnew System::EventHandler(this, &MenuPrincipal::button9_Click);
+			// 
+			// button8
+			// 
+			this->button8->Location = System::Drawing::Point(135, 19);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(112, 52);
+			this->button8->TabIndex = 8;
+			this->button8->Text = L"Ordens de serviço concluídas e não reportadas";
+			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &MenuPrincipal::button8_Click);
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(6, 19);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(112, 52);
+			this->button7->TabIndex = 7;
+			this->button7->Text = L"Ordens de serviço pendentes";
+			this->button7->UseVisualStyleBackColor = true;
+			// 
 			// btnNovoBuraco
 			// 
-			this->btnNovoBuraco->Location = System::Drawing::Point(6, 157);
+			this->btnNovoBuraco->Location = System::Drawing::Point(6, 89);
 			this->btnNovoBuraco->Name = L"btnNovoBuraco";
 			this->btnNovoBuraco->Size = System::Drawing::Size(112, 52);
 			this->btnNovoBuraco->TabIndex = 6;
@@ -188,7 +228,7 @@ namespace Project1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(457, 402);
+			this->ClientSize = System::Drawing::Size(457, 340);
 			this->Controls->Add(this->groupBox3);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->groupBox1);
@@ -228,6 +268,14 @@ private: System::Void button5_Click(System::Object^  sender, System::EventArgs^ 
 private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
 	CadastroBuracos^ tela = gcnew CadastroBuracos();
 	tela->ShowDialog();
+}
+private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
+	OSConcluidaNaoReportada^ caixa = gcnew OSConcluidaNaoReportada();
+	caixa->ShowDialog();
+}
+private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
+	OSConcluidaReportada^ caixa = gcnew OSConcluidaReportada();
+	caixa->ShowDialog();
 }
 };
 }
