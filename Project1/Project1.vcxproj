@@ -144,6 +144,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CadastroBuracos.cpp" />
     <ClCompile Include="CaixaDeDialogo.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
     <ClCompile Include="CRUDFuncionarios.cpp" />
@@ -155,6 +156,9 @@
     <ClCompile Include="CRUD_Equip.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CadastroBuracos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="CaixaDeDialogo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -190,6 +194,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CadastroBuracos.resx">
+      <DependentUpon>CadastroBuracos.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CaixaDeDialogo.resx">
       <DependentUpon>CaixaDeDialogo.h</DependentUpon>
     </EmbeddedResource>

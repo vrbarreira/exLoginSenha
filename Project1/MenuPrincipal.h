@@ -4,6 +4,7 @@
 #include "CRUDMateriais.h"
 #include "CRUDFuncionarios.h"
 #include "FaturasMensais.h"
+#include "CadastroBuracos.h"
 
 namespace Project1 {
 
@@ -49,6 +50,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^  button5;
 	private: System::Windows::Forms::Button^  button6;
 	private: System::Windows::Forms::GroupBox^  groupBox3;
+	private: System::Windows::Forms::Button^  button7;
 
 	private:
 		/// <summary>
@@ -63,7 +65,6 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MenuPrincipal::typeid));
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -73,8 +74,10 @@ namespace Project1 {
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
+			this->groupBox3->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// groupBox1
@@ -162,12 +165,23 @@ namespace Project1 {
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->button7);
 			this->groupBox3->Location = System::Drawing::Point(12, 175);
 			this->groupBox3->Name = L"groupBox3";
 			this->groupBox3->Size = System::Drawing::Size(433, 198);
 			this->groupBox3->TabIndex = 2;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"Buracos e Ordens de Serviço";
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(17, 19);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(112, 52);
+			this->button7->TabIndex = 6;
+			this->button7->Text = L"Registrar novo\r\nburaco";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MenuPrincipal::button7_Click);
 			// 
 			// MenuPrincipal
 			// 
@@ -182,6 +196,7 @@ namespace Project1 {
 			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &MenuPrincipal::MenuPrincipal_FormClosed);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox2->ResumeLayout(false);
+			this->groupBox3->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
@@ -207,6 +222,10 @@ private: System::Void button4_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
 	FaturasMensais^ tela = gcnew FaturasMensais();
+	tela->ShowDialog();
+}
+private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
+	CadastroBuracos^ tela = gcnew CadastroBuracos();
 	tela->ShowDialog();
 }
 };
