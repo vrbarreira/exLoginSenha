@@ -150,11 +150,17 @@
     <ClCompile Include="CRUDFuncionarios.cpp" />
     <ClCompile Include="CRUD_Materiais.cpp" />
     <ClCompile Include="ExemploDeFotos.cpp" />
+    <ClCompile Include="ExemploDeInfoDeBuraco.cpp" />
+    <ClCompile Include="ExemploDeRegistroDeCom.cpp" />
+    <ClCompile Include="ExemploDeTelaOSNaoReportada.cpp" />
+    <ClCompile Include="ExemploDeTelaOsReportada.cpp" />
     <ClCompile Include="FaturasMensais.cpp" />
     <ClCompile Include="Janela4.cpp" />
     <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="CRUD_Equip.cpp" />
+    <ClCompile Include="OSConcluidaNaoReportada.cpp" />
+    <ClCompile Include="OSConcluidaReportada.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CadastroBuracos.h">
@@ -175,6 +181,18 @@
     <ClInclude Include="ExemploDeFotos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ExemploDeInfoDeBuraco.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExemploDeRegistroDeCom.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExemploDeTelaOSNaoReportada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExemploDeTelaOsReportada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="FaturasMensais.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -190,6 +208,8 @@
     <ClInclude Include="CRUDEquipamentos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="OSConcluidaNaoReportada.h" />
+    <ClInclude Include="OSConcluidaReportada.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +237,18 @@
       <DependentUpon>CRUDMateriais.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExemploDeFotos.resx" />
+    <EmbeddedResource Include="ExemploDeInfoDeBuraco.resx">
+      <DependentUpon>ExemploDeInfoDeBuraco.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeRegistroDeCom.resx">
+      <DependentUpon>ExemploDeRegistroDeCom.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeTelaOSNaoReportada.resx">
+      <DependentUpon>ExemploDeTelaOSNaoReportada.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeTelaOsReportada.resx">
+      <DependentUpon>ExemploDeTelaOsReportada.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FaturasMensais.resx">
       <DependentUpon>FaturasMensais.h</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +261,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OSConcluidaNaoReportada.resx" />
+    <EmbeddedResource Include="OSConcluidaReportada.resx" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="View.rc" />

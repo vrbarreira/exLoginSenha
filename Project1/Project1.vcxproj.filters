@@ -48,6 +48,24 @@
     <ClCompile Include="ExemploDeFotos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExemploDeInfoDeBuraco.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExemploDeRegistroDeCom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExemploDeTelaOSNaoReportada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExemploDeTelaOsReportada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OSConcluidaNaoReportada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OSConcluidaReportada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -86,6 +104,24 @@
     <ClInclude Include="ExemploDeFotos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ExemploDeInfoDeBuraco.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExemploDeRegistroDeCom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExemploDeTelaOSNaoReportada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExemploDeTelaOsReportada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OSConcluidaNaoReportada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OSConcluidaReportada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Janela4.resx">
@@ -119,6 +155,12 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="ExemploDeFotos.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OSConcluidaNaoReportada.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OSConcluidaReportada.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>
