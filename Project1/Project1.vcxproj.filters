@@ -66,6 +66,27 @@
     <ClCompile Include="OSConcluidaReportada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="OS1_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OS1_1_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OS1_1_1_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OS1_1_1_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OS1_1_1_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OS1_1_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OS1_1_2_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -122,6 +143,27 @@
     <ClInclude Include="OSConcluidaReportada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="OS1_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OS1_1_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OS1_1_2_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Janela4.resx">
@@ -161,6 +203,18 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="OSConcluidaReportada.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeInfoDeBuraco.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeRegistroDeCom.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeTelaOSNaoReportada.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExemploDeTelaOsReportada.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

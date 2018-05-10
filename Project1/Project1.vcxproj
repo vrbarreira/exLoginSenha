@@ -159,6 +159,13 @@
     <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="CRUD_Equip.cpp" />
+    <ClCompile Include="OS1_1.cpp" />
+    <ClCompile Include="OS1_1_1.cpp" />
+    <ClCompile Include="OS1_1_1_1.cpp" />
+    <ClCompile Include="OS1_1_1_2.cpp" />
+    <ClCompile Include="OS1_1_1_3.cpp" />
+    <ClCompile Include="OS1_1_2.cpp" />
+    <ClCompile Include="OS1_1_2_1.cpp" />
     <ClCompile Include="OSConcluidaNaoReportada.cpp" />
     <ClCompile Include="OSConcluidaReportada.cpp" />
   </ItemGroup>
@@ -208,8 +215,33 @@
     <ClInclude Include="CRUDEquipamentos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="OSConcluidaNaoReportada.h" />
-    <ClInclude Include="OSConcluidaReportada.h" />
+    <ClInclude Include="OS1_1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1_1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1_2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OS1_1_1_3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OS1_1_2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OS1_1_2_1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OSConcluidaNaoReportada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OSConcluidaReportada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +292,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1.resx">
+      <DependentUpon>OS1_1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_1.resx">
+      <DependentUpon>OS1_1_1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_1_2.resx">
+      <DependentUpon>OS1_1_1_2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_1_3.resx">
+      <DependentUpon>OS1_1_1_3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_2.resx">
+      <DependentUpon>OS1_1_2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_2_1.resx">
+      <DependentUpon>OS1_1_2_1.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OSConcluidaNaoReportada.resx" />
     <EmbeddedResource Include="OSConcluidaReportada.resx" />
