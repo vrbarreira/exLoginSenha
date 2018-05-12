@@ -1,7 +1,7 @@
 #pragma once
 #include "OS1_1_2_1.h"
 
-namespace TelasLamarcainfoBuraco {
+namespace Project1 {
 
 	using namespace System;
 	using namespace System::ComponentModel;

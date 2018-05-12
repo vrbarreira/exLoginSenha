@@ -137,9 +137,6 @@
     <ClInclude Include="ExemploDeTelaOsReportada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OSConcluidaNaoReportada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="OSConcluidaReportada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -215,6 +212,24 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="ExemploDeTelaOsReportada.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_1.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_1_2.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_1_3.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_2.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OS1_1_2_1.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

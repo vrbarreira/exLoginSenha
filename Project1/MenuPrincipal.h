@@ -7,6 +7,9 @@
 #include "CadastroBuracos.h"
 #include "OSConcluidaNaoReportada.h"
 #include "OSConcluidaReportada.h"
+#include "OS1_1.h"
+
+//using namespace Project1;
 
 namespace Project1 {
 
@@ -213,6 +216,7 @@ namespace Project1 {
 			this->button7->TabIndex = 7;
 			this->button7->Text = L"Ordens de serviço pendentes";
 			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MenuPrincipal::button7_Click);
 			// 
 			// btnNovoBuraco
 			// 
@@ -265,10 +269,6 @@ private: System::Void button5_Click(System::Object^  sender, System::EventArgs^ 
 	FaturasMensais^ tela = gcnew FaturasMensais();
 	tela->ShowDialog();
 }
-private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
-	CadastroBuracos^ tela = gcnew CadastroBuracos();
-	tela->ShowDialog();
-}
 private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
 	OSConcluidaNaoReportada^ caixa = gcnew OSConcluidaNaoReportada();
 	caixa->ShowDialog();
@@ -276,6 +276,10 @@ private: System::Void button8_Click(System::Object^  sender, System::EventArgs^ 
 private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
 	OSConcluidaReportada^ caixa = gcnew OSConcluidaReportada();
 	caixa->ShowDialog();
+}
+private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
+	OS1_1 ^ form = gcnew OS1_1;
+	form->ShowDialog();
 }
 };
 }

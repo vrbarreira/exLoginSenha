@@ -1,6 +1,6 @@
 #pragma once
 
-namespace TelasLamarcainfoBuraco {
+namespace Project1 {
 
 	using namespace System;
 	using namespace System::ComponentModel;

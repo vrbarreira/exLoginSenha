@@ -2,7 +2,7 @@
 #include "OS1_1_1.h"
 #include "OS1_1_2.h"
 
-namespace TelasLamarcainfoBuraco {
+namespace Project1 {
 
 	using namespace System;
 	using namespace System::ComponentModel;

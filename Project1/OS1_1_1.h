@@ -3,7 +3,7 @@
 #include "OS1_1_1_3.h"
 
 
-namespace TelasLamarcainfoBuraco {
+namespace Project1 {
 
 	using namespace System;
 	using namespace System::ComponentModel;
