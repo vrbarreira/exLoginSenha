@@ -3,6 +3,7 @@
 #include "Janela4.h"
 #include "CaixaDeDialogo.h"
 #include "MenuPrincipal.h"
+#include "MySQLDAO.h"
 
 /*
 Referência: http://www.visualcplusdotnet.com/visualcplusdotnet21.html
@@ -243,6 +244,22 @@ private: System::Void bt_limpar_Click(System::Object^  sender, System::EventArgs
 
 }
 private: System::Void bt_validar_Click(System::Object^  sender, System::EventArgs^  e) {
+	/*
+	sql::Connection * connection;
+	sql::Statement* statement;
+	sql::PreparedStatement * preparedStatement;
+	sql::ResultSet *resultSet;
+//	try {
+
+		//Pegar conexão
+		MySQLDAO* mysqldao = MySQLDAO::getInstance();
+		connection = mysqldao->getConnection();
+		preparedStatement = connection->prepareStatement("insert into Equipamento (NOME, TIPO, CUSTO_MANUTENCAO) values ('Britadera','ZZK9000',350.14)");
+
+		preparedStatement->execute();
+
+		*/
+
 	if ((this->tb_login->Text == String::Empty) && (this -> tb_senha->Text == String::Empty)) {
 		this->tb_mensagem->AppendText("\r\nCampos de Login e senha vazios");
 		tb_login->BackColor = System::Drawing::Color::Yellow;

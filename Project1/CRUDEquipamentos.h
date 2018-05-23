@@ -1,5 +1,14 @@
 #pragma once
 
+#include <msclr\marshal_cppstd.h>
+#include <ctime>
+#include <iomanip>
+#include <sstream>
+
+#include "MySQLDAO.h"
+
+
+
 namespace Project1 {
 
 	using namespace System;
@@ -169,6 +178,7 @@ namespace Project1 {
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(202, 20);
 			this->textBox2->TabIndex = 10;
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm1::textBox2_TextChanged);
 			// 
 			// textBox1
 			// 
@@ -176,6 +186,7 @@ namespace Project1 {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(202, 20);
 			this->textBox1->TabIndex = 9;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm1::textBox1_TextChanged);
 			// 
 			// label3
 			// 
@@ -222,8 +233,32 @@ namespace Project1 {
 		}
 #pragma endregion
 	private: System::Void btn_Cadastro_Click(System::Object^  sender, System::EventArgs^  e) {
+
+		ControleEquipamento.insere(msclr::interop::marshal_as<std::string>(this->textBox1->Text), msclr::interop::marshal_as<std::string>(this->textBox2->Text));
+
+		/*
+		sql::Connection * connection;
+		sql::Statement* statement;
+		sql::PreparedStatement * preparedStatement;
+		sql::ResultSet *resultSet;
+
+		MySQLDAO* mysqldao = MySQLDAO::getInstance();
+		connection = mysqldao->getConnection();
+		preparedStatement = connection->prepareStatement("insert into Equipamento (NOME, TIPO, CUSTO_MANUTENCAO) values (?,'GRANDE',?)");
+
+//		msclr::interop::marshal_as<std::string>(this->textBox1->Text)
+
+		preparedStatement->setString(1, msclr::interop::marshal_as<std::string>(this->textBox1->Text).c_str());
+		preparedStatement->setString(2, msclr::interop::marshal_as<std::string>(this->textBox2->Text).c_str());
+
+		preparedStatement->execute();
+		*/
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
+private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void textBox2_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
 };
 }
