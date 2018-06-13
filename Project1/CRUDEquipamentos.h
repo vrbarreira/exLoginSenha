@@ -234,7 +234,7 @@ namespace Project1 {
 #pragma endregion
 	private: System::Void btn_Cadastro_Click(System::Object^  sender, System::EventArgs^  e) {
 
-		ControleEquipamento.insere(msclr::interop::marshal_as<std::string>(this->textBox1->Text), msclr::interop::marshal_as<std::string>(this->textBox2->Text));
+		//ControleEquipamento.insere(msclr::interop::marshal_as<std::string>(this->textBox1->Text), msclr::interop::marshal_as<std::string>(this->textBox2->Text));
 
 		/*
 		sql::Connection * connection;

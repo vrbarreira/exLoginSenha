@@ -227,6 +227,7 @@ namespace Project1 {
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
 			this->Text = L"Aplicação CLR usando C++";
+			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &MyForm::MyForm_FormClosed);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -305,6 +306,9 @@ private: System::Void exCaixaDeDialogoToolStripMenuItem_Click(System::Object^  s
 		this->tb_mensagem->AppendText("\r\n" + caixa->Telefone);
 	}
 
+}
+private: System::Void MyForm_FormClosed(System::Object^  sender, System::Windows::Forms::FormClosedEventArgs^  e) {
+	Application::Exit();
 }
 };
 }
