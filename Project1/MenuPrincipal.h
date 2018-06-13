@@ -181,7 +181,7 @@ namespace Project1 {
 			this->groupBox3->Controls->Add(this->button8);
 			this->groupBox3->Controls->Add(this->button7);
 			this->groupBox3->Controls->Add(this->btnNovoBuraco);
-			this->groupBox3->Location = System::Drawing::Point(12, 175);
+			this->groupBox3->Location = System::Drawing::Point(12, 176);
 			this->groupBox3->Name = L"groupBox3";
 			this->groupBox3->Size = System::Drawing::Size(433, 156);
 			this->groupBox3->TabIndex = 2;

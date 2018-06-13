@@ -5,9 +5,10 @@
 #include <iomanip>
 #include <sstream>
 
-#include "MySQLDAO.h"
+//#include "MySQLDAO.h"
+#include "Controle_CU14.h"
 
-
+#define to_str(a) msclr::interop::marshal_as<std::string>(a)
 
 namespace Project1 {
 
@@ -234,6 +235,9 @@ namespace Project1 {
 #pragma endregion
 	private: System::Void btn_Cadastro_Click(System::Object^  sender, System::EventArgs^  e) {
 
+		Controle_CU14* controle = Controle_CU14::getInstance();
+		controle->insereEquipamento(to_str(this->textBox1->Text), "GRANDE", to_str(this->textBox2->Text));
+		//ControleEquipamento.insere(msclr::interop::marshal_as<std::string>(this->textBox1->Text), msclr::interop::marshal_as<std::string>(this->textBox2->Text));
 		//ControleEquipamento.insere(msclr::interop::marshal_as<std::string>(this->textBox1->Text), msclr::interop::marshal_as<std::string>(this->textBox2->Text));
 
 		/*
@@ -252,7 +256,7 @@ namespace Project1 {
 		preparedStatement->setString(2, msclr::interop::marshal_as<std::string>(this->textBox2->Text).c_str());
 
 		preparedStatement->execute();
-		*/
+		//*/
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}

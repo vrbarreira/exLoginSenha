@@ -147,9 +147,11 @@
   <ItemGroup>
     <ClCompile Include="CadastroBuracos.cpp" />
     <ClCompile Include="CaixaDeDialogo.cpp" />
+    <ClCompile Include="Controle_CU14.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
     <ClCompile Include="CRUDFuncionarios.cpp" />
     <ClCompile Include="CRUD_Materiais.cpp" />
+    <ClCompile Include="DAO_equipamento.cpp" />
     <ClCompile Include="ExemploDeFotos.cpp" />
     <ClCompile Include="ExemploDeInfoDeBuraco.cpp" />
     <ClCompile Include="ExemploDeRegistroDeCom.cpp" />
@@ -177,7 +179,7 @@
     <ClInclude Include="CaixaDeDialogo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="ControleEquipamento.h" />
+    <ClInclude Include="Controle_CU14.h" />
     <ClInclude Include="CRUDEquipes.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -187,6 +189,7 @@
     <ClInclude Include="CRUDMateriais.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="DAO_equipamento.h" />
     <ClInclude Include="ExemploDeFotos.h">
       <FileType>CppForm</FileType>
     </ClInclude>

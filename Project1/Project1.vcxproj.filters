@@ -87,6 +87,12 @@
     <ClCompile Include="MySQLDAO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Controle_CU14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DAO_equipamento.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -164,7 +170,10 @@
     <ClInclude Include="MySQLDAO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ControleEquipamento.h">
+    <ClInclude Include="Controle_CU14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DAO_equipamento.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
