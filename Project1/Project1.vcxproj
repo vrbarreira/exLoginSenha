@@ -104,13 +104,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <LanguageStandard>stdcpp14</LanguageStandard>
-      <AdditionalIncludeDirectories>D:\pcs3443\mysql-connector-c++-8.0.11-windows-x86-64bit\include\jdbc;D:\pcs3443\boost_1_67_0;C:\Users\Victor\Documents\Meus Trabalhos\POLI\201801\Laboratório de Engenharia de Software I\[2018]\Projeto\ProjGit\mysql-connector-c++-8.0.11-windows-x86-64bit\include\jdbc;C:\Users\Victor\Documents\Meus Trabalhos\POLI\201801\Laboratório de Engenharia de Software I\[2018]\Projeto\ProjGit\boost_1_67_0;C:\Users\Victor Lamarca\Documents\POLI DISCIPLINAS\2018 - 7o semestre\Lab Eng Soft\TelasLamarca_infoBuraco\TelasLamarca_infoBuraco</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Victor Lamarca\Documents\POLI DISCIPLINAS\2018 - 7o semestre\Lab Eng Soft\Downloads\mysql-connector-c++-8.0.11-windows-x86-64bit\include\jdbc;C:\Users\Victor Lamarca\Documents\POLI DISCIPLINAS\2018 - 7o semestre\Lab Eng Soft\Downloads\boost_1_67_0;D:\pcs3443\mysql-connector-c++-8.0.11-windows-x86-64bit\include\jdbc;D:\pcs3443\boost_1_67_0;C:\Users\Victor\Documents\Meus Trabalhos\POLI\201801\Laboratório de Engenharia de Software I\[2018]\Projeto\ProjGit\mysql-connector-c++-8.0.11-windows-x86-64bit\include\jdbc;C:\Users\Victor\Documents\Meus Trabalhos\POLI\201801\Laboratório de Engenharia de Software I\[2018]\Projeto\ProjGit\boost_1_67_0;C:\Users\Victor Lamarca\Documents\POLI DISCIPLINAS\2018 - 7o semestre\Lab Eng Soft\TelasLamarca_infoBuraco\TelasLamarca_infoBuraco</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>mysqlcppconn.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
-      <AdditionalLibraryDirectories>D:\pcs3443\mysql-connector-c++-8.0.11-windows-x86-64bit\lib64\vs14;C:\Users\Victor\Documents\Meus Trabalhos\POLI\201801\Laboratório de Engenharia de Software I\[2018]\Projeto\ProjGit\mysql-connector-c++-8.0.11-windows-x86-64bit\lib64\vs14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\pcs3443\mysql-connector-c++-8.0.11-windows-x86-64bit\lib64\vs14;C:\Users\Victor\Documents\Meus Trabalhos\POLI\201801\Laboratório de Engenharia de Software I\[2018]\Projeto\ProjGit\mysql-connector-c++-8.0.11-windows-x86-64bit\lib64\vs14;C:\Users\Victor Lamarca\Documents\POLI DISCIPLINAS\2018 - 7o semestre\Lab Eng Soft\Downloads\mysql-connector-c++-8.0.11-windows-x86-64bit\lib64\vs14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -145,24 +145,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Assessor.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Buraco.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Cidadao.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Despachador.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Equipamento.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\EquipeDeObras.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fatura.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fotos.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Funcionário.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorDeProblemas.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorRegional.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Material.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Notificação.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\OrdemDeServiço.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Recursos.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Saída.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\TelaSistema.cpp" />
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.cpp" />
     <ClCompile Include="CadastroBuracos.cpp" />
     <ClCompile Include="CaixaDeDialogo.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
@@ -189,24 +171,6 @@
     <ClCompile Include="OSConcluidaReportada.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Assessor.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Buraco.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Cidadao.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Despachador.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Equipamento.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\EquipeDeObras.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fatura.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fotos.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Funcionário.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorDeProblemas.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorRegional.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Material.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Notificação.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\OrdemDeServiço.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Recursos.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Saída.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\TelaSistema.h" />
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.h" />
     <ClInclude Include="CadastroBuracos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
