@@ -147,60 +147,6 @@
     <ClCompile Include="CU22.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Recursos.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Saída.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TelaSistema.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Usuário.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Assessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Buraco.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Cidadao.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Despachador.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Equipamento.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EquipeDeObras.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Fatura.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Fotos.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Funcionário.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GestorDeProblemas.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GestorRegional.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Material.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Notificação.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="OrdemDeServiço.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -339,60 +285,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CU22.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Recursos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Saída.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TelaSistema.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Usuário.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Assessor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Buraco.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Cidadao.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Despachador.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Equipamento.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EquipeDeObras.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Fatura.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Fotos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Funcionário.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GestorDeProblemas.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GestorRegional.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Material.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Notificação.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="OrdemDeServiço.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

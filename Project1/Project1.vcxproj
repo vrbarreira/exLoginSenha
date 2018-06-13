@@ -145,11 +145,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Assessor.cpp" />
-    <ClCompile Include="Buraco.cpp" />
     <ClCompile Include="CadastroBuracos.cpp" />
     <ClCompile Include="CaixaDeDialogo.cpp" />
-    <ClCompile Include="Cidadao.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
     <ClCompile Include="CRUDFuncionarios.cpp" />
     <ClCompile Include="CRUD_Materiais.cpp" />
@@ -173,27 +170,16 @@
     <ClCompile Include="CU20.cpp" />
     <ClCompile Include="CU21.cpp" />
     <ClCompile Include="CU22.cpp" />
-    <ClCompile Include="Despachador.cpp" />
-    <ClCompile Include="Equipamento.cpp" />
-    <ClCompile Include="EquipeDeObras.cpp" />
     <ClCompile Include="ExemploDeFotos.cpp" />
     <ClCompile Include="ExemploDeInfoDeBuraco.cpp" />
     <ClCompile Include="ExemploDeRegistroDeCom.cpp" />
     <ClCompile Include="ExemploDeTelaOSNaoReportada.cpp" />
     <ClCompile Include="ExemploDeTelaOsReportada.cpp" />
-    <ClCompile Include="Fatura.cpp" />
-    <ClCompile Include="Fotos.cpp" />
-    <ClCompile Include="Funcionário.cpp" />
-    <ClCompile Include="GestorDeProblemas.cpp" />
-    <ClCompile Include="GestorRegional.cpp" />
     <ClCompile Include="Janela4.cpp" />
-    <ClCompile Include="Material.cpp" />
     <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="CRUD_Equip.cpp" />
     <ClCompile Include="MySQLDAO.cpp" />
-    <ClCompile Include="Notificação.cpp" />
-    <ClCompile Include="OrdemDeServiço.cpp" />
     <ClCompile Include="OS1_1.cpp" />
     <ClCompile Include="OS1_1_1.cpp" />
     <ClCompile Include="OS1_1_1_1.cpp" />
@@ -203,21 +189,14 @@
     <ClCompile Include="OS1_1_2_1.cpp" />
     <ClCompile Include="OSConcluidaNaoReportada.cpp" />
     <ClCompile Include="OSConcluidaReportada.cpp" />
-    <ClCompile Include="Recursos.cpp" />
-    <ClCompile Include="Saída.cpp" />
-    <ClCompile Include="TelaSistema.cpp" />
-    <ClCompile Include="Usuário.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Assessor.h" />
-    <ClInclude Include="Buraco.h" />
     <ClInclude Include="CadastroBuracos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CaixaDeDialogo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Cidadao.h" />
     <ClInclude Include="ControleEquipamento.h" />
     <ClInclude Include="CRUDEquipes.h">
       <FileType>CppForm</FileType>
@@ -248,9 +227,6 @@
     <ClInclude Include="CU20.h" />
     <ClInclude Include="CU21.h" />
     <ClInclude Include="CU22.h" />
-    <ClInclude Include="Despachador.h" />
-    <ClInclude Include="Equipamento.h" />
-    <ClInclude Include="EquipeDeObras.h" />
     <ClInclude Include="ExemploDeFotos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -266,18 +242,12 @@
     <ClInclude Include="ExemploDeTelaOsReportada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Fatura.h" />
     <ClInclude Include="FaturasMensais.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Fotos.h" />
-    <ClInclude Include="Funcionário.h" />
-    <ClInclude Include="GestorDeProblemas.h" />
-    <ClInclude Include="GestorRegional.h" />
     <ClInclude Include="Janela4.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Material.h" />
     <ClInclude Include="MenuPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -288,8 +258,6 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MySQLDAO.h" />
-    <ClInclude Include="Notificação.h" />
-    <ClInclude Include="OrdemDeServiço.h" />
     <ClInclude Include="OS1_1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -302,11 +270,7 @@
     <ClInclude Include="OSConcluidaReportada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Recursos.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Saída.h" />
-    <ClInclude Include="TelaSistema.h" />
-    <ClInclude Include="Usuário.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\dados\dados.vcxproj">
