@@ -87,60 +87,6 @@
     <ClCompile Include="MySQLDAO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Assessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Buraco.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Cidadao.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Despachador.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Equipamento.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\EquipeDeObras.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fatura.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fotos.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Funcionário.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorDeProblemas.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorRegional.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Material.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Notificação.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\OrdemDeServiço.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Recursos.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Saída.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\TelaSistema.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CU01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -279,60 +225,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ControleEquipamento.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Assessor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Buraco.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Cidadao.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Despachador.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Equipamento.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\EquipeDeObras.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fatura.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fotos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Funcionário.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorDeProblemas.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorRegional.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Material.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Notificação.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\OrdemDeServiço.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Recursos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Saída.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\TelaSistema.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CU01.h">
