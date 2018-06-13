@@ -145,6 +145,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Assessor.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Buraco.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Cidadao.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Despachador.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Equipamento.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\EquipeDeObras.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fatura.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fotos.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Funcionário.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorDeProblemas.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorRegional.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Material.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Notificação.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\OrdemDeServiço.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Recursos.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Saída.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\TelaSistema.cpp" />
+    <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.cpp" />
     <ClCompile Include="CadastroBuracos.cpp" />
     <ClCompile Include="CaixaDeDialogo.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
@@ -191,6 +209,24 @@
     <ClCompile Include="OSConcluidaReportada.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Assessor.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Buraco.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Cidadao.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Despachador.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Equipamento.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\EquipeDeObras.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fatura.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Fotos.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Funcionário.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorDeProblemas.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\GestorRegional.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Material.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Notificação.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\OrdemDeServiço.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Recursos.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Saída.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\TelaSistema.h" />
+    <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.h" />
     <ClInclude Include="CadastroBuracos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
