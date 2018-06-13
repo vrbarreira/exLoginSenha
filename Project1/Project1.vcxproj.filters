@@ -141,6 +141,66 @@
     <ClCompile Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CU01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU03.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU06.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU07.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU08.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU09.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU17.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU19.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU20.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU21.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CU22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -273,6 +333,66 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Diagrama Casos Uso\diagrama_hugao\ClassesModel\Usuário.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU01.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU02.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU03.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU06.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU07.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU08.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU09.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU13.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU15.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU17.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU18.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU19.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU20.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU21.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CU22.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

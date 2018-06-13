@@ -168,6 +168,26 @@
     <ClCompile Include="CRUDEquipes.cpp" />
     <ClCompile Include="CRUDFuncionarios.cpp" />
     <ClCompile Include="CRUD_Materiais.cpp" />
+    <ClCompile Include="CU01.cpp" />
+    <ClCompile Include="CU02.cpp" />
+    <ClCompile Include="CU03.cpp" />
+    <ClCompile Include="CU06.cpp" />
+    <ClCompile Include="CU07.cpp" />
+    <ClCompile Include="CU08.cpp" />
+    <ClCompile Include="CU09.cpp" />
+    <ClCompile Include="CU10.cpp" />
+    <ClCompile Include="CU11.cpp" />
+    <ClCompile Include="CU12.cpp" />
+    <ClCompile Include="CU13.cpp" />
+    <ClCompile Include="CU14.cpp" />
+    <ClCompile Include="CU15.cpp" />
+    <ClCompile Include="CU16.cpp" />
+    <ClCompile Include="CU17.cpp" />
+    <ClCompile Include="CU18.cpp" />
+    <ClCompile Include="CU19.cpp" />
+    <ClCompile Include="CU20.cpp" />
+    <ClCompile Include="CU21.cpp" />
+    <ClCompile Include="CU22.cpp" />
     <ClCompile Include="ExemploDeFotos.cpp" />
     <ClCompile Include="ExemploDeInfoDeBuraco.cpp" />
     <ClCompile Include="ExemploDeRegistroDeCom.cpp" />
@@ -223,6 +243,26 @@
     <ClInclude Include="CRUDMateriais.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CU01.h" />
+    <ClInclude Include="CU02.h" />
+    <ClInclude Include="CU03.h" />
+    <ClInclude Include="CU06.h" />
+    <ClInclude Include="CU07.h" />
+    <ClInclude Include="CU08.h" />
+    <ClInclude Include="CU09.h" />
+    <ClInclude Include="CU10.h" />
+    <ClInclude Include="CU11.h" />
+    <ClInclude Include="CU12.h" />
+    <ClInclude Include="CU13.h" />
+    <ClInclude Include="CU14.h" />
+    <ClInclude Include="CU15.h" />
+    <ClInclude Include="CU16.h" />
+    <ClInclude Include="CU17.h" />
+    <ClInclude Include="CU18.h" />
+    <ClInclude Include="CU19.h" />
+    <ClInclude Include="CU20.h" />
+    <ClInclude Include="CU21.h" />
+    <ClInclude Include="CU22.h" />
     <ClInclude Include="ExemploDeFotos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
