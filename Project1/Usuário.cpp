@@ -16,6 +16,42 @@ Usuário::~Usuário()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+int Usuário::get_id() 
+{
+    //TODO Auto-generated method stub
+    return id;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void Usuário::set_id(int id) 
+{
+    //TODO Auto-generated method stub
+    this->id = id;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+char Usuário::get_login() 
+{
+    //TODO Auto-generated method stub
+    return login;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void Usuário::set_login(char login) 
+{
+    //TODO Auto-generated method stub
+    this->login = login;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+char Usuário::get_senha() 
+{
+    //TODO Auto-generated method stub
+    return senha;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void Usuário::set_senha(char senha) 
+{
+    //TODO Auto-generated method stub
+    this->senha = senha;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 Funcionário * Usuário::get_funcionário() 
 {
     //TODO Auto-generated method stub
@@ -27,50 +63,13 @@ void Usuário::set_funcionário(Funcionário * funcionário)
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Usuário::get_login() 
+GestorRegional * Usuário::get_gestorRegional() 
 {
     //TODO Auto-generated method stub
-    return login;
+    return gestorRegional;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Usuário::set_login( login) 
+void Usuário::set_gestorRegional(GestorRegional * gestorRegional) 
 {
     //TODO Auto-generated method stub
-    this->login = login;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Usuário::get_senha() 
-{
-    //TODO Auto-generated method stub
-    return senha;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Usuário::set_senha( senha) 
-{
-    //TODO Auto-generated method stub
-    this->senha = senha;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Usuário::getLogin() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Usuário::getSenha() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Usuário::alterarLogin() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Usuário::alterarSenha() 
-{
-    //TODO Auto-generated method stub
-    return;
 }

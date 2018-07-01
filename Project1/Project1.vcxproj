@@ -145,23 +145,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Assessor.cpp" />
+    <ClCompile Include="Buraco.cpp" />
     <ClCompile Include="CadastroBuracos.cpp" />
     <ClCompile Include="CaixaDeDialogo.cpp" />
+    <ClCompile Include="Cidadao.cpp" />
     <ClCompile Include="Controle_CU14.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
     <ClCompile Include="CRUDFuncionarios.cpp" />
     <ClCompile Include="CRUD_Materiais.cpp" />
+    <ClCompile Include="CU01.cpp" />
+    <ClCompile Include="CU02.cpp" />
+    <ClCompile Include="CU03.cpp" />
+    <ClCompile Include="CU06.cpp" />
+    <ClCompile Include="CU07.cpp" />
+    <ClCompile Include="CU08.cpp" />
+    <ClCompile Include="CU09.cpp" />
+    <ClCompile Include="CU10.cpp" />
+    <ClCompile Include="CU11.cpp" />
+    <ClCompile Include="CU12.cpp" />
+    <ClCompile Include="CU13.cpp" />
+    <ClCompile Include="CU14.cpp" />
+    <ClCompile Include="CU15.cpp" />
+    <ClCompile Include="CU16.cpp" />
+    <ClCompile Include="CU17.cpp" />
+    <ClCompile Include="CU18.cpp" />
+    <ClCompile Include="CU19.cpp" />
+    <ClCompile Include="CU20.cpp" />
+    <ClCompile Include="CU21.cpp" />
+    <ClCompile Include="CU22.cpp" />
     <ClCompile Include="DAO_equipamento.cpp" />
+    <ClCompile Include="Despachador.cpp" />
+    <ClCompile Include="Equipamento.cpp" />
+    <ClCompile Include="EquipeDeObras.cpp" />
     <ClCompile Include="ExemploDeFotos.cpp" />
     <ClCompile Include="ExemploDeInfoDeBuraco.cpp" />
     <ClCompile Include="ExemploDeRegistroDeCom.cpp" />
     <ClCompile Include="ExemploDeTelaOSNaoReportada.cpp" />
     <ClCompile Include="ExemploDeTelaOsReportada.cpp" />
+    <ClCompile Include="Fatura.cpp" />
+    <ClCompile Include="Fotos.cpp" />
+    <ClCompile Include="Funcionário.cpp" />
+    <ClCompile Include="GestorRegional.cpp" />
     <ClCompile Include="Janela4.cpp" />
+    <ClCompile Include="Material.cpp" />
     <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="CRUD_Equip.cpp" />
     <ClCompile Include="MySQLDAO.cpp" />
+    <ClCompile Include="Notificação.cpp" />
+    <ClCompile Include="OrdemDeServiço.cpp" />
     <ClCompile Include="OS1_1.cpp" />
     <ClCompile Include="OS1_1_1.cpp" />
     <ClCompile Include="OS1_1_1_1.cpp" />
@@ -171,14 +204,20 @@
     <ClCompile Include="OS1_1_2_1.cpp" />
     <ClCompile Include="OSConcluidaNaoReportada.cpp" />
     <ClCompile Include="OSConcluidaReportada.cpp" />
+    <ClCompile Include="Recursos.cpp" />
+    <ClCompile Include="TelaSistema.cpp" />
+    <ClCompile Include="Usuário.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Assessor.h" />
+    <ClInclude Include="Buraco.h" />
     <ClInclude Include="CadastroBuracos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CaixaDeDialogo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Cidadao.h" />
     <ClInclude Include="Controle_CU14.h" />
     <ClInclude Include="CRUDEquipes.h">
       <FileType>CppForm</FileType>
@@ -189,7 +228,30 @@
     <ClInclude Include="CRUDMateriais.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CU01.h" />
+    <ClInclude Include="CU02.h" />
+    <ClInclude Include="CU03.h" />
+    <ClInclude Include="CU06.h" />
+    <ClInclude Include="CU07.h" />
+    <ClInclude Include="CU08.h" />
+    <ClInclude Include="CU09.h" />
+    <ClInclude Include="CU10.h" />
+    <ClInclude Include="CU11.h" />
+    <ClInclude Include="CU12.h" />
+    <ClInclude Include="CU13.h" />
+    <ClInclude Include="CU14.h" />
+    <ClInclude Include="CU15.h" />
+    <ClInclude Include="CU16.h" />
+    <ClInclude Include="CU17.h" />
+    <ClInclude Include="CU18.h" />
+    <ClInclude Include="CU19.h" />
+    <ClInclude Include="CU20.h" />
+    <ClInclude Include="CU21.h" />
+    <ClInclude Include="CU22.h" />
     <ClInclude Include="DAO_equipamento.h" />
+    <ClInclude Include="Despachador.h" />
+    <ClInclude Include="Equipamento.h" />
+    <ClInclude Include="EquipeDeObras.h" />
     <ClInclude Include="ExemploDeFotos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -205,12 +267,17 @@
     <ClInclude Include="ExemploDeTelaOsReportada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Fatura.h" />
     <ClInclude Include="FaturasMensais.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Fotos.h" />
+    <ClInclude Include="Funcionário.h" />
+    <ClInclude Include="GestorRegional.h" />
     <ClInclude Include="Janela4.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Material.h" />
     <ClInclude Include="MenuPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -221,6 +288,8 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MySQLDAO.h" />
+    <ClInclude Include="Notificação.h" />
+    <ClInclude Include="OrdemDeServiço.h" />
     <ClInclude Include="OS1_1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -233,7 +302,11 @@
     <ClInclude Include="OSConcluidaReportada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Recursos.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Saída.h" />
+    <ClInclude Include="TelaSistema.h" />
+    <ClInclude Include="Usuário.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\dados\dados.vcxproj">

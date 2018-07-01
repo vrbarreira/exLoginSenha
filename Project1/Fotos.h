@@ -10,7 +10,6 @@
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Fotos
 {
-
     //Begin section for Fotos
     //TODO: Add attributes that you want preserved
     //End section for Fotos
@@ -26,16 +25,6 @@ class Fotos
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         virtual ~Fotos(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getFoto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void adicionarFoto(); 
 
 
 

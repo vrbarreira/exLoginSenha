@@ -7,6 +7,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+using sql::ResultSet;
 
 //#include "../dominio"
 
@@ -20,8 +21,10 @@ public:
 
 	virtual ~Controle_CU14();
 
+	ResultSet* selecionarEquipamento();
 	void insereEquipamento(string nome, string tipo, string custoDeManutencao);
-
+	void alteraEquipamento(string id, string nome, string tipo, string custoDeManutencao);
+	void excluiEquipamento(string id);
 };
 
 #endif

@@ -16,7 +16,6 @@ class OrdemDeServiço; //Dependency Generated Source:Material Target:OrdemDeServi
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Material : Recursos
 {
-
     //Begin section for Material
     //TODO: Add attributes that you want preserved
     //End section for Material
@@ -25,22 +24,22 @@ class Material : Recursos
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         tipo;
+        char tipo;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         unidadeDeMedida;
+        char unidadeDeMedida;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         custoPorMedida;
+        float custoPorMedida;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         quantidadeEmEstoque;
+        float quantidadeEmEstoque;
 
 
 
@@ -64,49 +63,49 @@ class Material : Recursos
 
         //get tipo
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_tipo(); 
+        char get_tipo(); 
 
 
 
         //set tipo
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_tipo( tipo); 
+        void set_tipo(char tipo); 
 
 
 
         //get unidadeDeMedida
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_unidadeDeMedida(); 
+        char get_unidadeDeMedida(); 
 
 
 
         //set unidadeDeMedida
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_unidadeDeMedida( unidadeDeMedida); 
+        void set_unidadeDeMedida(char unidadeDeMedida); 
 
 
 
         //get custoPorMedida
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_custoPorMedida(); 
+        float get_custoPorMedida(); 
 
 
 
         //set custoPorMedida
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_custoPorMedida( custoPorMedida); 
+        void set_custoPorMedida(float custoPorMedida); 
 
 
 
         //get quantidadeEmEstoque
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_quantidadeEmEstoque(); 
+        float get_quantidadeEmEstoque(); 
 
 
 
         //set quantidadeEmEstoque
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_quantidadeEmEstoque( quantidadeEmEstoque); 
+        void set_quantidadeEmEstoque(float quantidadeEmEstoque); 
 
 
 
@@ -119,56 +118,6 @@ class Material : Recursos
         //set ordemDeServiço
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void set_ordemDeServiço(OrdemDeServiço * ordemDeServiço); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getTipo(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getUnidade(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCusto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getQuantidade(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarCusto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarTipo(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarQuantidade(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarUnidade(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void criarMaterial(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getMaterial(); 
 
 
 

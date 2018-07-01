@@ -17,7 +17,6 @@ class Buraco; //Dependency Generated Source:Cidadao Target:Buraco
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Cidadao
 {
-
     //Begin section for Cidadao
     //TODO: Add attributes that you want preserved
     //End section for Cidadao
@@ -26,12 +25,22 @@ class Cidadao
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         nomeCidadao;
+        int id;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         numContatações;
+        char nomeCidadao;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char cpf;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        int numContatações;
 
 
 
@@ -58,27 +67,51 @@ class Cidadao
 
 
 
+        //get id
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        int get_id(); 
+
+
+
+        //set id
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_id(int id); 
+
+
+
         //get nomeCidadao
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_nomeCidadao(); 
+        char get_nomeCidadao(); 
 
 
 
         //set nomeCidadao
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_nomeCidadao( nomeCidadao); 
+        void set_nomeCidadao(char nomeCidadao); 
+
+
+
+        //get cpf
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char get_cpf(); 
+
+
+
+        //set cpf
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_cpf(char cpf); 
 
 
 
         //get numContatações
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_numContatações(); 
+        int get_numContatações(); 
 
 
 
         //set numContatações
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_numContatações( numContatações); 
+        void set_numContatações(int numContatações); 
 
 
 
@@ -103,16 +136,6 @@ class Cidadao
         //set buraco
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void set_buraco(Buraco * buraco); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCidadao(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void construtor__cidadao(); 
 
 
 

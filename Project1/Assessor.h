@@ -16,7 +16,6 @@ class Buraco; //Dependency Generated Source:Assessor Target:Buraco
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Assessor : Funcionário
 {
-
     //Begin section for Assessor
     //TODO: Add attributes that you want preserved
     //End section for Assessor

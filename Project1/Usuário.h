@@ -8,13 +8,15 @@
 class Funcionário; //Dependency Generated Source:Usuário Target:Funcionário
 
 
+class GestorRegional; //Dependency Generated Source:Usuário Target:GestorRegional
+
+
 
 
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Usuário
 {
-
     //Begin section for Usuário
     //TODO: Add attributes that you want preserved
     //End section for Usuário
@@ -23,17 +25,27 @@ class Usuário
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        int id;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char login;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char senha;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         Funcionário * funcionário;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         login;
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         senha;
+        GestorRegional * gestorRegional;
 
 
 
@@ -50,6 +62,42 @@ class Usuário
 
 
 
+        //get id
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        int get_id(); 
+
+
+
+        //set id
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_id(int id); 
+
+
+
+        //get login
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char get_login(); 
+
+
+
+        //set login
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_login(char login); 
+
+
+
+        //get senha
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char get_senha(); 
+
+
+
+        //set senha
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_senha(char senha); 
+
+
+
         //get funcionário
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         Funcionário * get_funcionário(); 
@@ -62,47 +110,15 @@ class Usuário
 
 
 
-        //get login
+        //get gestorRegional
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_login(); 
+        GestorRegional * get_gestorRegional(); 
 
 
 
-        //set login
+        //set gestorRegional
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_login( login); 
-
-
-
-        //get senha
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_senha(); 
-
-
-
-        //set senha
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_senha( senha); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getLogin(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getSenha(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarLogin(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarSenha(); 
+        void set_gestorRegional(GestorRegional * gestorRegional); 
 
 
 

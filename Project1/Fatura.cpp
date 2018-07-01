@@ -16,37 +16,37 @@ Fatura::~Fatura()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Fatura::get_data() 
+char Fatura::get_data() 
 {
     //TODO Auto-generated method stub
     return data;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Fatura::set_data( data) 
+void Fatura::set_data(char data) 
 {
     //TODO Auto-generated method stub
     this->data = data;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Fatura::get_custo() 
+float Fatura::get_custo() 
 {
     //TODO Auto-generated method stub
     return custo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Fatura::set_custo( custo) 
+void Fatura::set_custo(float custo) 
 {
     //TODO Auto-generated method stub
     this->custo = custo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Fatura::get_regional() 
+int Fatura::get_regional() 
 {
     //TODO Auto-generated method stub
     return regional;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Fatura::set_regional( regional) 
+void Fatura::set_regional(int regional) 
 {
     //TODO Auto-generated method stub
     this->regional = regional;
@@ -63,19 +63,18 @@ void Fatura::set_saída(Saída * saída)
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+Regional * Fatura::get_regional2() 
+{
+    //TODO Auto-generated method stub
+    return regional2;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void Fatura::set_regional2(Regional * regional2) 
+{
+    //TODO Auto-generated method stub
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 void Fatura::getListaOS() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Fatura::getCusto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Fatura::alterarData() 
 {
     //TODO Auto-generated method stub
     return;

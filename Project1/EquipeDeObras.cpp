@@ -16,61 +16,61 @@ EquipeDeObras::~EquipeDeObras()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- EquipeDeObras::get_nome() 
+char EquipeDeObras::get_nome() 
 {
     //TODO Auto-generated method stub
     return nome;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::set_nome( nome) 
+void EquipeDeObras::set_nome(char nome) 
 {
     //TODO Auto-generated method stub
     this->nome = nome;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- EquipeDeObras::get_numeroDeTrabalhadores() 
+int EquipeDeObras::get_numeroDeTrabalhadores() 
 {
     //TODO Auto-generated method stub
     return numeroDeTrabalhadores;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::set_numeroDeTrabalhadores( numeroDeTrabalhadores) 
+void EquipeDeObras::set_numeroDeTrabalhadores(int numeroDeTrabalhadores) 
 {
     //TODO Auto-generated method stub
     this->numeroDeTrabalhadores = numeroDeTrabalhadores;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- EquipeDeObras::get_custoDeDeslocamento() 
+float EquipeDeObras::get_custoDeDeslocamento() 
 {
     //TODO Auto-generated method stub
     return custoDeDeslocamento;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::set_custoDeDeslocamento( custoDeDeslocamento) 
+void EquipeDeObras::set_custoDeDeslocamento(float custoDeDeslocamento) 
 {
     //TODO Auto-generated method stub
     this->custoDeDeslocamento = custoDeDeslocamento;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- EquipeDeObras::get_custoPorHora() 
+float EquipeDeObras::get_custoPorHora() 
 {
     //TODO Auto-generated method stub
     return custoPorHora;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::set_custoPorHora( custoPorHora) 
+void EquipeDeObras::set_custoPorHora(float custoPorHora) 
 {
     //TODO Auto-generated method stub
     this->custoPorHora = custoPorHora;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- EquipeDeObras::get_horarioDeServico() 
+char EquipeDeObras::get_horarioDeServico() 
 {
     //TODO Auto-generated method stub
     return horarioDeServico;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::set_horarioDeServico( horarioDeServico) 
+void EquipeDeObras::set_horarioDeServico(char horarioDeServico) 
 {
     //TODO Auto-generated method stub
     this->horarioDeServico = horarioDeServico;
@@ -111,78 +111,6 @@ void EquipeDeObras::finalizarSaida()
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 void EquipeDeObras::adicionarFotoConserto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::criarEquipeDeObras() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::alteraNome() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::alteraNumTrabalhadores() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::alteraCustoHora() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::alteraCustoDeslocamento() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::getNumTrabalhadores() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::alteraHorarioServico() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::getNome() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::getCustoHora() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::getCustoDeslocamento() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::getHorarioServico() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void EquipeDeObras::getEquipe() 
 {
     //TODO Auto-generated method stub
     return;

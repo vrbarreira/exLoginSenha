@@ -16,18 +16,6 @@ GestorRegional::~GestorRegional()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- GestorRegional::get_regiao() 
-{
-    //TODO Auto-generated method stub
-    return regiao;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void GestorRegional::set_regiao( regiao) 
-{
-    //TODO Auto-generated method stub
-    this->regiao = regiao;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 OrdemDeServiço * GestorRegional::get_ordemDeServiço() 
 {
     //TODO Auto-generated method stub
@@ -35,6 +23,28 @@ OrdemDeServiço * GestorRegional::get_ordemDeServiço()
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 void GestorRegional::set_ordemDeServiço(OrdemDeServiço * ordemDeServiço) 
+{
+    //TODO Auto-generated method stub
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+Regional * GestorRegional::get_regional() 
+{
+    //TODO Auto-generated method stub
+    return regional;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void GestorRegional::set_regional(Regional * regional) 
+{
+    //TODO Auto-generated method stub
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+Usuário * GestorRegional::get_usuário() 
+{
+    //TODO Auto-generated method stub
+    return usuário;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void GestorRegional::set_usuário(Usuário * usuário) 
 {
     //TODO Auto-generated method stub
 }

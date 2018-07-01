@@ -16,49 +16,49 @@ Material::~Material()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Material::get_tipo() 
+char Material::get_tipo() 
 {
     //TODO Auto-generated method stub
     return tipo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::set_tipo( tipo) 
+void Material::set_tipo(char tipo) 
 {
     //TODO Auto-generated method stub
     this->tipo = tipo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Material::get_unidadeDeMedida() 
+char Material::get_unidadeDeMedida() 
 {
     //TODO Auto-generated method stub
     return unidadeDeMedida;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::set_unidadeDeMedida( unidadeDeMedida) 
+void Material::set_unidadeDeMedida(char unidadeDeMedida) 
 {
     //TODO Auto-generated method stub
     this->unidadeDeMedida = unidadeDeMedida;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Material::get_custoPorMedida() 
+float Material::get_custoPorMedida() 
 {
     //TODO Auto-generated method stub
     return custoPorMedida;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::set_custoPorMedida( custoPorMedida) 
+void Material::set_custoPorMedida(float custoPorMedida) 
 {
     //TODO Auto-generated method stub
     this->custoPorMedida = custoPorMedida;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Material::get_quantidadeEmEstoque() 
+float Material::get_quantidadeEmEstoque() 
 {
     //TODO Auto-generated method stub
     return quantidadeEmEstoque;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::set_quantidadeEmEstoque( quantidadeEmEstoque) 
+void Material::set_quantidadeEmEstoque(float quantidadeEmEstoque) 
 {
     //TODO Auto-generated method stub
     this->quantidadeEmEstoque = quantidadeEmEstoque;
@@ -73,64 +73,4 @@ OrdemDeServiço * Material::get_ordemDeServiço()
 void Material::set_ordemDeServiço(OrdemDeServiço * ordemDeServiço) 
 {
     //TODO Auto-generated method stub
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::getTipo() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::getUnidade() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::getCusto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::getQuantidade() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::alterarCusto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::alterarTipo() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::alterarQuantidade() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::alterarUnidade() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::criarMaterial() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Material::getMaterial() 
-{
-    //TODO Auto-generated method stub
-    return;
 }

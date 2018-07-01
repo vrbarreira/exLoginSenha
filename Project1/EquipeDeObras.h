@@ -19,7 +19,6 @@ class OrdemDeServiço; //Dependency Generated Source:EquipeDeObras Target:OrdemDe
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class EquipeDeObras : Funcionário
 {
-
     //Begin section for EquipeDeObras
     //TODO: Add attributes that you want preserved
     //End section for EquipeDeObras
@@ -28,27 +27,27 @@ class EquipeDeObras : Funcionário
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         nome;
+        char nome;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         numeroDeTrabalhadores;
+        int numeroDeTrabalhadores;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         custoDeDeslocamento;
+        float custoDeDeslocamento;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         custoPorHora;
+        float custoPorHora;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         horarioDeServico;
+        char horarioDeServico;
 
 
 
@@ -77,61 +76,61 @@ class EquipeDeObras : Funcionário
 
         //get nome
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_nome(); 
+        char get_nome(); 
 
 
 
         //set nome
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_nome( nome); 
+        void set_nome(char nome); 
 
 
 
         //get numeroDeTrabalhadores
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_numeroDeTrabalhadores(); 
+        int get_numeroDeTrabalhadores(); 
 
 
 
         //set numeroDeTrabalhadores
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_numeroDeTrabalhadores( numeroDeTrabalhadores); 
+        void set_numeroDeTrabalhadores(int numeroDeTrabalhadores); 
 
 
 
         //get custoDeDeslocamento
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_custoDeDeslocamento(); 
+        float get_custoDeDeslocamento(); 
 
 
 
         //set custoDeDeslocamento
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_custoDeDeslocamento( custoDeDeslocamento); 
+        void set_custoDeDeslocamento(float custoDeDeslocamento); 
 
 
 
         //get custoPorHora
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_custoPorHora(); 
+        float get_custoPorHora(); 
 
 
 
         //set custoPorHora
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_custoPorHora( custoPorHora); 
+        void set_custoPorHora(float custoPorHora); 
 
 
 
         //get horarioDeServico
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_horarioDeServico(); 
+        char get_horarioDeServico(); 
 
 
 
         //set horarioDeServico
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_horarioDeServico( horarioDeServico); 
+        void set_horarioDeServico(char horarioDeServico); 
 
 
 
@@ -171,66 +170,6 @@ class EquipeDeObras : Funcionário
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void adicionarFotoConserto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void criarEquipeDeObras(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraNome(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraNumTrabalhadores(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraCustoHora(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraCustoDeslocamento(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getNumTrabalhadores(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraHorarioServico(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getNome(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCustoHora(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCustoDeslocamento(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getHorarioServico(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getEquipe(); 
 
 
 

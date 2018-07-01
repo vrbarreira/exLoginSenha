@@ -8,13 +8,18 @@
 class OrdemDeServiço; //Dependency Generated Source:GestorRegional Target:OrdemDeServiço
 
 
+class Regional; //Dependency Generated Source:GestorRegional Target:Regional
+
+
+class Usuário; //Dependency Generated Source:GestorRegional Target:Usuário
+
+
 
 
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class GestorRegional
 {
-
     //Begin section for GestorRegional
     //TODO: Add attributes that you want preserved
     //End section for GestorRegional
@@ -23,12 +28,17 @@ class GestorRegional
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         regiao;
+        OrdemDeServiço * ordemDeServiço;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        OrdemDeServiço * ordemDeServiço;
+        Regional * regional;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        Usuário * usuário;
 
 
 
@@ -45,18 +55,6 @@ class GestorRegional
 
 
 
-        //get regiao
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_regiao(); 
-
-
-
-        //set regiao
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_regiao( regiao); 
-
-
-
         //get ordemDeServiço
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         OrdemDeServiço * get_ordemDeServiço(); 
@@ -66,6 +64,30 @@ class GestorRegional
         //set ordemDeServiço
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void set_ordemDeServiço(OrdemDeServiço * ordemDeServiço); 
+
+
+
+        //get regional
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        Regional * get_regional(); 
+
+
+
+        //set regional
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_regional(Regional * regional); 
+
+
+
+        //get usuário
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        Usuário * get_usuário(); 
+
+
+
+        //set usuário
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_usuário(Usuário * usuário); 
 
 
 

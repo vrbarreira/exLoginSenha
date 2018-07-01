@@ -17,7 +17,6 @@ class Cidadao; //Dependency Generated Source:Notificação Target:Cidadao
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Notificação
 {
-
     //Begin section for Notificação
     //TODO: Add attributes that you want preserved
     //End section for Notificação
@@ -26,32 +25,32 @@ class Notificação
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         meioComunicação;
+        int id;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         dataHoraResposta;
+        char meioComunic;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         textoDaResposta;
+        char dataHoraNotif;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         foto;
+        char dataHoraResposta;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         foiNotificado;
+        char textoDaResposta;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         data;
+        bool respondida;
 
 
 
@@ -78,75 +77,75 @@ class Notificação
 
 
 
-        //get meioComunicação
+        //get id
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_meioComunicação(); 
+        int get_id(); 
 
 
 
-        //set meioComunicação
+        //set id
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_meioComunicação( meioComunicação); 
+        void set_id(int id); 
+
+
+
+        //get meioComunic
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char get_meioComunic(); 
+
+
+
+        //set meioComunic
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_meioComunic(char meioComunic); 
+
+
+
+        //get dataHoraNotif
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char get_dataHoraNotif(); 
+
+
+
+        //set dataHoraNotif
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_dataHoraNotif(char dataHoraNotif); 
 
 
 
         //get dataHoraResposta
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_dataHoraResposta(); 
+        char get_dataHoraResposta(); 
 
 
 
         //set dataHoraResposta
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_dataHoraResposta( dataHoraResposta); 
+        void set_dataHoraResposta(char dataHoraResposta); 
 
 
 
         //get textoDaResposta
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_textoDaResposta(); 
+        char get_textoDaResposta(); 
 
 
 
         //set textoDaResposta
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_textoDaResposta( textoDaResposta); 
+        void set_textoDaResposta(char textoDaResposta); 
 
 
 
-        //get foto
+        //get respondida
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_foto(); 
+        bool get_respondida(); 
 
 
 
-        //set foto
+        //set respondida
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_foto( foto); 
-
-
-
-        //get foiNotificado
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_foiNotificado(); 
-
-
-
-        //set foiNotificado
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_foiNotificado( foiNotificado); 
-
-
-
-        //get data
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_data(); 
-
-
-
-        //set data
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_data( data); 
+        void set_respondida(bool respondida); 
 
 
 
@@ -175,57 +174,12 @@ class Notificação
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCidadão(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getMeioComunicação(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getFoto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getData(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getLista__(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void notificado(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getNotificação__(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void Registra_notificação(); 
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void registraNotificação(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraStatus_notficacaoDeBuraco_id__notificado_(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getListaDeBuracosSeremNotificados(); 
 
 
 

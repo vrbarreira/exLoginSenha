@@ -1,54 +1,54 @@
-#ifndef GESTORDEPROBLEMAS_H
-#define GESTORDEPROBLEMAS_H
-//Begin section for file GestorDeProblemas.h
+#ifndef CU02_H
+#define CU02_H
+//Begin section for file CU02.h
 //TODO: Add definitions that you want preserved
-//End section for file GestorDeProblemas.h
+//End section for file CU02.h
 
 
 
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-class GestorDeProblemas
+class CU02
 {
-
-    //Begin section for GestorDeProblemas
+    //Begin section for CU02
     //TODO: Add attributes that you want preserved
-    //End section for GestorDeProblemas
-
-    private:
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         numeroDeBuracosReincidentes;
-
+    //End section for CU02
 
 
 
     public:
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        GestorDeProblemas(); 
+        CU02(); 
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        virtual ~GestorDeProblemas(); 
+        virtual ~CU02(); 
 
 
 
-        //get numeroDeBuracosReincidentes
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_numeroDeBuracosReincidentes(); 
+        void existeBuraco(); 
 
 
 
-        //set numeroDeBuracosReincidentes
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_numeroDeBuracosReincidentes( numeroDeBuracosReincidentes); 
+        void updateInfoBuraco(); 
 
 
 
-};  //end class GestorDeProblemas
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void criarBuraco(); 
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void getListaDeBuracosCadastrados(); 
+
+
+
+};  //end class CU02
 
 
 

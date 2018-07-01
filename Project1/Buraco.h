@@ -23,7 +23,6 @@ class Cidadao; //Dependency Generated Source:Buraco Target:Cidadao
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Buraco
 {
-
     //Begin section for Buraco
     //TODO: Add attributes that you want preserved
     //End section for Buraco
@@ -32,47 +31,42 @@ class Buraco
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         id;
+        int id;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         status;
+        char status;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         endereco;
+        char endereco;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         tamanho;
+        char tamanho;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         fotos;
+        int numReclamacoes;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         numReclamações;
+        int id_regiao;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         região;
+        char posiçãoNaVia;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         posiçãoNaVia;
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         numRecorrências;
+        int numRecorrencias;
 
 
 
@@ -92,7 +86,7 @@ class Buraco
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         numeroDeReincidencias;
+        int numeroDeReincidencias;
 
 
 
@@ -116,109 +110,97 @@ class Buraco
 
         //get id
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_id(); 
+        int get_id(); 
 
 
 
         //set id
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_id( id); 
+        void set_id(int id); 
 
 
 
         //get status
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_status(); 
+        char get_status(); 
 
 
 
         //set status
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_status( status); 
+        void set_status(char status); 
 
 
 
         //get endereco
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_endereco(); 
+        char get_endereco(); 
 
 
 
         //set endereco
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_endereco( endereco); 
+        void set_endereco(char endereco); 
 
 
 
         //get tamanho
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_tamanho(); 
+        char get_tamanho(); 
 
 
 
         //set tamanho
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_tamanho( tamanho); 
+        void set_tamanho(char tamanho); 
 
 
 
-        //get fotos
+        //get numReclamacoes
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_fotos(); 
+        int get_numReclamacoes(); 
 
 
 
-        //set fotos
+        //set numReclamacoes
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_fotos( fotos); 
+        void set_numReclamacoes(int numReclamacoes); 
 
 
 
-        //get numReclamações
+        //get id_regiao
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_numReclamações(); 
+        int get_id_regiao(); 
 
 
 
-        //set numReclamações
+        //set id_regiao
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_numReclamações( numReclamações); 
-
-
-
-        //get região
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_região(); 
-
-
-
-        //set região
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_região( região); 
+        void set_id_regiao(int id_regiao); 
 
 
 
         //get posiçãoNaVia
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_posiçãoNaVia(); 
+        char get_posiçãoNaVia(); 
 
 
 
         //set posiçãoNaVia
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_posiçãoNaVia( posiçãoNaVia); 
+        void set_posiçãoNaVia(char posiçãoNaVia); 
 
 
 
-        //get numRecorrências
+        //get numRecorrencias
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_numRecorrências(); 
+        int get_numRecorrencias(); 
 
 
 
-        //set numRecorrências
+        //set numRecorrencias
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_numRecorrências( numRecorrências); 
+        void set_numRecorrencias(int numRecorrencias); 
 
 
 
@@ -260,13 +242,13 @@ class Buraco
 
         //get numeroDeReincidencias
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_numeroDeReincidencias(); 
+        int get_numeroDeReincidencias(); 
 
 
 
         //set numeroDeReincidencias
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_numeroDeReincidencias( numeroDeReincidencias); 
+        void set_numeroDeReincidencias(int numeroDeReincidencias); 
 
 
 
@@ -279,91 +261,6 @@ class Buraco
         //set cidadao
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void set_cidadao(Cidadao * cidadao); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getId(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getEndereço(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getTamanho(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getFotos(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getReclamações(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getRegião(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getPosição(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getRecorrência(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraReclamação(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraTamanho(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getListaDeBuracosJaCadastrados(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void incrementaNumeroDeReincidências(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void construtor__buraco(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void atulizar(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void incrementaNumeroDeReclamacao(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraStatus(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getInforcacoes(); 
 
 
 

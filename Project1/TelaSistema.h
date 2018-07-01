@@ -10,7 +10,6 @@
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class TelaSistema
 {
-
     //Begin section for TelaSistema
     //TODO: Add attributes that you want preserved
     //End section for TelaSistema

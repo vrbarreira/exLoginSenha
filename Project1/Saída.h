@@ -20,7 +20,6 @@ class Despachador; //Dependency Generated Source:Saída Target:Despachador
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Saída
 {
-
     //Begin section for Saída
     //TODO: Add attributes that you want preserved
     //End section for Saída
@@ -29,12 +28,17 @@ class Saída
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         data;
+        int id;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         horário;
+        char data;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        char horário;
 
 
 
@@ -66,27 +70,39 @@ class Saída
 
 
 
+        //get id
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        int get_id(); 
+
+
+
+        //set id
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_id(int id); 
+
+
+
         //get data
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_data(); 
+        char get_data(); 
 
 
 
         //set data
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_data( data); 
+        void set_data(char data); 
 
 
 
         //get horário
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_horário(); 
+        char get_horário(); 
 
 
 
         //set horário
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_horário( horário); 
+        void set_horário(char horário); 
 
 
 
@@ -123,26 +139,6 @@ class Saída
         //set despachador
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void set_despachador(Despachador * despachador); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getHorário(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getData(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraData(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraHorário(); 
 
 
 

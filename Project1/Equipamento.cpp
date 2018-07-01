@@ -1,8 +1,10 @@
 #include "Equipamento.h"
+#include "Recursos.h"
 //Begin section for file Equipamento.cpp
 //TODO: Add definitions that you want preserved
 //End section for file Equipamento.cpp
-
+#include <string>
+using std::string;
 
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
@@ -10,43 +12,59 @@ Equipamento::Equipamento()
 {
     //TODO Auto-generated method stub
 }
+
+Equipamento::Equipamento(int id, string nome, string tipo, float custoDeManutenção) : Recursos(id), nome(nome), tipo(tipo), custoDeManutenção(custoDeManutenção)
+{
+}
+
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 Equipamento::~Equipamento() 
 {
     //TODO Auto-generated method stub
 }
+
+int Equipamento::get_id() {
+	return Recursos::get_id();
+}
+
+void Equipamento::set_id(int id)
+{
+	//TODO Auto-generated method stub
+	Recursos::set_id(id);
+}
+
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Equipamento::get_nome() 
+string Equipamento::get_nome()
 {
     //TODO Auto-generated method stub
     return nome;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::set_nome( nome) 
+void Equipamento::set_nome(string nome)
 {
     //TODO Auto-generated method stub
     this->nome = nome;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Equipamento::get_tipo() 
+string Equipamento::get_tipo()
 {
     //TODO Auto-generated method stub
     return tipo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::set_tipo( tipo) 
+void Equipamento::set_tipo(string tipo)
 {
     //TODO Auto-generated method stub
     this->tipo = tipo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Equipamento::get_custoDeManutenção() 
+float Equipamento::get_custoDeManutenção() 
 {
     //TODO Auto-generated method stub
     return custoDeManutenção;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::set_custoDeManutenção( custoDeManutenção) 
+void Equipamento::set_custoDeManutenção(float custoDeManutenção) 
 {
     //TODO Auto-generated method stub
     this->custoDeManutenção = custoDeManutenção;
@@ -61,58 +79,4 @@ OrdemDeServiço * Equipamento::get_ordemDeServiço()
 void Equipamento::set_ordemDeServiço(OrdemDeServiço * ordemDeServiço) 
 {
     //TODO Auto-generated method stub
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::alteraNome() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::alteraTipo() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::alteraCusto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::getNome() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::getCusto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::getTipo() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::getEquipamento() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::excluirEquipamento() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Equipamento::criarEquipamento() 
-{
-    //TODO Auto-generated method stub
-    return;
 }

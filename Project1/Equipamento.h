@@ -4,8 +4,8 @@
 //TODO: Add definitions that you want preserved
 //End section for file Equipamento.h
 #include "Recursos.h"
-
-
+#include <string>
+using std::string;
 
 class OrdemDeServiço; //Dependency Generated Source:Equipamento Target:OrdemDeServiço
 
@@ -16,7 +16,6 @@ class OrdemDeServiço; //Dependency Generated Source:Equipamento Target:OrdemDeSe
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Equipamento : Recursos
 {
-
     //Begin section for Equipamento
     //TODO: Add attributes that you want preserved
     //End section for Equipamento
@@ -25,17 +24,17 @@ class Equipamento : Recursos
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         nome;
+        string nome;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         tipo;
+        string tipo;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         custoDeManutenção;
+        float custoDeManutenção;
 
 
 
@@ -49,47 +48,49 @@ class Equipamento : Recursos
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         Equipamento(); 
-
+		Equipamento(int id, string nome, string tipo, float custoDeManutenção);
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         virtual ~Equipamento(); 
 
 
+		int get_id();
+		void set_id(int id);
 
         //get nome
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_nome(); 
+		string get_nome();
 
 
 
         //set nome
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_nome( nome); 
+        void set_nome(string nome);
 
 
 
         //get tipo
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_tipo(); 
+		string get_tipo();
 
 
 
         //set tipo
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_tipo( tipo); 
+        void set_tipo(string tipo);
 
 
 
         //get custoDeManutenção
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_custoDeManutenção(); 
+        float get_custoDeManutenção(); 
 
 
 
         //set custoDeManutenção
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_custoDeManutenção( custoDeManutenção); 
+        void set_custoDeManutenção(float custoDeManutenção); 
 
 
 
@@ -102,51 +103,6 @@ class Equipamento : Recursos
         //set ordemDeServiço
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void set_ordemDeServiço(OrdemDeServiço * ordemDeServiço); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraNome(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraTipo(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alteraCusto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getNome(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCusto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getTipo(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getEquipamento(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void excluirEquipamento(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void criarEquipamento(); 
 
 
 

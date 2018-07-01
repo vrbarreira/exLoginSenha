@@ -8,13 +8,15 @@
 class Saída; //Dependency Generated Source:Fatura Target:Saída
 
 
+class Regional; //Dependency Generated Source:Fatura Target:Regional
+
+
 
 
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Fatura
 {
-
     //Begin section for Fatura
     //TODO: Add attributes that you want preserved
     //End section for Fatura
@@ -23,22 +25,27 @@ class Fatura
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         data;
+        char data;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         custo;
+        float custo;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         regional;
+        int regional;
 
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         Saída * saída;
+
+
+
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        Regional * regional2;
 
 
 
@@ -57,37 +64,37 @@ class Fatura
 
         //get data
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_data(); 
+        char get_data(); 
 
 
 
         //set data
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_data( data); 
+        void set_data(char data); 
 
 
 
         //get custo
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_custo(); 
+        float get_custo(); 
 
 
 
         //set custo
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_custo( custo); 
+        void set_custo(float custo); 
 
 
 
         //get regional
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_regional(); 
+        int get_regional(); 
 
 
 
         //set regional
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_regional( regional); 
+        void set_regional(int regional); 
 
 
 
@@ -103,18 +110,20 @@ class Fatura
 
 
 
+        //get regional2
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        Regional * get_regional2(); 
+
+
+
+        //set regional2
+        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+        void set_regional2(Regional * regional2); 
+
+
+
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         void getListaOS(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCusto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarData(); 
 
 
 

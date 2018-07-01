@@ -16,76 +16,76 @@ Notificação::~Notificação()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Notificação::get_meioComunicação() 
+int Notificação::get_id() 
 {
     //TODO Auto-generated method stub
-    return meioComunicação;
+    return id;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::set_meioComunicação( meioComunicação) 
+void Notificação::set_id(int id) 
 {
     //TODO Auto-generated method stub
-    this->meioComunicação = meioComunicação;
+    this->id = id;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Notificação::get_dataHoraResposta() 
+char Notificação::get_meioComunic() 
+{
+    //TODO Auto-generated method stub
+    return meioComunic;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void Notificação::set_meioComunic(char meioComunic) 
+{
+    //TODO Auto-generated method stub
+    this->meioComunic = meioComunic;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+char Notificação::get_dataHoraNotif() 
+{
+    //TODO Auto-generated method stub
+    return dataHoraNotif;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void Notificação::set_dataHoraNotif(char dataHoraNotif) 
+{
+    //TODO Auto-generated method stub
+    this->dataHoraNotif = dataHoraNotif;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+char Notificação::get_dataHoraResposta() 
 {
     //TODO Auto-generated method stub
     return dataHoraResposta;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::set_dataHoraResposta( dataHoraResposta) 
+void Notificação::set_dataHoraResposta(char dataHoraResposta) 
 {
     //TODO Auto-generated method stub
     this->dataHoraResposta = dataHoraResposta;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Notificação::get_textoDaResposta() 
+char Notificação::get_textoDaResposta() 
 {
     //TODO Auto-generated method stub
     return textoDaResposta;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::set_textoDaResposta( textoDaResposta) 
+void Notificação::set_textoDaResposta(char textoDaResposta) 
 {
     //TODO Auto-generated method stub
     this->textoDaResposta = textoDaResposta;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Notificação::get_foto() 
+bool Notificação::get_respondida() 
 {
     //TODO Auto-generated method stub
-    return foto;
+    return respondida;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::set_foto( foto) 
+void Notificação::set_respondida(bool respondida) 
 {
     //TODO Auto-generated method stub
-    this->foto = foto;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Notificação::get_foiNotificado() 
-{
-    //TODO Auto-generated method stub
-    return foiNotificado;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::set_foiNotificado( foiNotificado) 
-{
-    //TODO Auto-generated method stub
-    this->foiNotificado = foiNotificado;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Notificação::get_data() 
-{
-    //TODO Auto-generated method stub
-    return data;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::set_data( data) 
-{
-    //TODO Auto-generated method stub
-    this->data = data;
+    this->respondida = respondida;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 Fotos * Notificação::get_fotos() 
@@ -110,48 +110,6 @@ void Notificação::set_cidadao(Cidadao * cidadao)
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::getCidadão() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::getMeioComunicação() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::getFoto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::getData() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::getLista__() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::notificado() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::getNotificação__() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 void Notificação::Registra_notificação() 
 {
     //TODO Auto-generated method stub
@@ -159,18 +117,6 @@ void Notificação::Registra_notificação()
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 void Notificação::registraNotificação() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::alteraStatus_notficacaoDeBuraco_id__notificado_() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Notificação::getListaDeBuracosSeremNotificados() 
 {
     //TODO Auto-generated method stub
     return;

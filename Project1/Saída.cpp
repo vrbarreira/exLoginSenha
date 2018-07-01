@@ -16,25 +16,37 @@ Saída::~Saída()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Saída::get_data() 
+int Saída::get_id() 
+{
+    //TODO Auto-generated method stub
+    return id;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+void Saída::set_id(int id) 
+{
+    //TODO Auto-generated method stub
+    this->id = id;
+}
+//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
+char Saída::get_data() 
 {
     //TODO Auto-generated method stub
     return data;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Saída::set_data( data) 
+void Saída::set_data(char data) 
 {
     //TODO Auto-generated method stub
     this->data = data;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- Saída::get_horário() 
+char Saída::get_horário() 
 {
     //TODO Auto-generated method stub
     return horário;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Saída::set_horário( horário) 
+void Saída::set_horário(char horário) 
 {
     //TODO Auto-generated method stub
     this->horário = horário;
@@ -71,28 +83,4 @@ Despachador * Saída::get_despachador()
 void Saída::set_despachador(Despachador * despachador) 
 {
     //TODO Auto-generated method stub
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Saída::getHorário() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Saída::getData() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Saída::alteraData() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void Saída::alteraHorário() 
-{
-    //TODO Auto-generated method stub
-    return;
 }

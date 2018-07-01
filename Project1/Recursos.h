@@ -10,7 +10,6 @@
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Recursos
 {
-
     //Begin section for Recursos
     //TODO: Add attributes that you want preserved
     //End section for Recursos
@@ -19,7 +18,7 @@ class Recursos
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         id;
+        int id;
 
 
 
@@ -38,18 +37,13 @@ class Recursos
 
         //get id
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-         get_id(); 
+        int get_id(); 
 
 
 
         //set id
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void set_id( id); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getId(); 
+        void set_id(int id); 
 
 
 

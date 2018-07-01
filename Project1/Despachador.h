@@ -19,7 +19,6 @@ class Saída; //Dependency Generated Source:Despachador Target:Saída
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 class Despachador : Funcionário
 {
-
     //Begin section for Despachador
     //TODO: Add attributes that you want preserved
     //End section for Despachador

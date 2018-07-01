@@ -16,85 +16,49 @@ OrdemDeServiço::~OrdemDeServiço()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- OrdemDeServiço::get_id() 
+int OrdemDeServiço::get_id() 
 {
     //TODO Auto-generated method stub
     return id;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_id( id) 
+void OrdemDeServiço::set_id(int id) 
 {
     //TODO Auto-generated method stub
     this->id = id;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- OrdemDeServiço::get_prioridade() 
+int OrdemDeServiço::get_prioridade() 
 {
     //TODO Auto-generated method stub
     return prioridade;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_prioridade( prioridade) 
+void OrdemDeServiço::set_prioridade(int prioridade) 
 {
     //TODO Auto-generated method stub
     this->prioridade = prioridade;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- OrdemDeServiço::get_custo() 
+float OrdemDeServiço::get_custo() 
 {
     //TODO Auto-generated method stub
     return custo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_custo( custo) 
+void OrdemDeServiço::set_custo(float custo) 
 {
     //TODO Auto-generated method stub
     this->custo = custo;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- OrdemDeServiço::get_equipamento() 
-{
-    //TODO Auto-generated method stub
-    return equipamento;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_equipamento( equipamento) 
-{
-    //TODO Auto-generated method stub
-    this->equipamento = equipamento;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- OrdemDeServiço::get_material() 
-{
-    //TODO Auto-generated method stub
-    return material;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_material( material) 
-{
-    //TODO Auto-generated method stub
-    this->material = material;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- OrdemDeServiço::get_equipe() 
-{
-    //TODO Auto-generated method stub
-    return equipe;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_equipe( equipe) 
-{
-    //TODO Auto-generated method stub
-    this->equipe = equipe;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
- OrdemDeServiço::get_status() 
+char OrdemDeServiço::get_status() 
 {
     //TODO Auto-generated method stub
     return status;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_status( status) 
+void OrdemDeServiço::set_status(char status) 
 {
     //TODO Auto-generated method stub
     this->status = status;
@@ -111,13 +75,13 @@ void OrdemDeServiço::set_gestorRegional(GestorRegional * gestorRegional)
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-Material * OrdemDeServiço::get_material_0() 
+Material * OrdemDeServiço::get_material() 
 {
     //TODO Auto-generated method stub
-    return material_0;
+    return material;
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::set_material_0(Material * material_0) 
+void OrdemDeServiço::set_material(Material * material) 
 {
     //TODO Auto-generated method stub
 }
@@ -164,82 +128,4 @@ Saída * OrdemDeServiço::get_saída()
 void OrdemDeServiço::set_saída(Saída * saída) 
 {
     //TODO Auto-generated method stub
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::getId() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::getPrioridade() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::getCusto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::getEquipamento() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::getMaterial() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::getEquipe() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::getStatus() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::alteraPrioridade() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::alteraStatus() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::alteraMaterial() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::alteraEquipamento() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::alteraCusto() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void OrdemDeServiço::alteraEquipe() 
-{
-    //TODO Auto-generated method stub
-    return;
 }

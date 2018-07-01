@@ -7,6 +7,7 @@
 
 //#include "MySQLDAO.h"
 #include "Controle_CU14.h"
+#include "Equipamento.h"
 
 #define to_str(a) msclr::interop::marshal_as<std::string>(a)
 
@@ -44,11 +45,11 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::DataGridView^  dataGridView1;
+
 	protected:
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Nome;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Tipo;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Custo;
+
+
+
 	private: System::Windows::Forms::Button^  btn_Cadastro;
 	private: System::Windows::Forms::Button^  btn_Alterar;
 	private: System::Windows::Forms::Button^  btn_Excluir;
@@ -59,6 +60,12 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::ListView^  listView1;
+	private: System::Windows::Forms::ColumnHeader^  ID;
+	private: System::Windows::Forms::ColumnHeader^  Nome;
+	private: System::Windows::Forms::ColumnHeader^  Tipo;
+	private: System::Windows::Forms::ColumnHeader^  Custo;
+	private: bool item_selecionado;
 
 
 	private:
@@ -74,10 +81,6 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->Nome = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Tipo = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Custo = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->btn_Cadastro = (gcnew System::Windows::Forms::Button());
 			this->btn_Alterar = (gcnew System::Windows::Forms::Button());
 			this->btn_Excluir = (gcnew System::Windows::Forms::Button());
@@ -88,36 +91,13 @@ namespace Project1 {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->listView1 = (gcnew System::Windows::Forms::ListView());
+			this->ID = (gcnew System::Windows::Forms::ColumnHeader());
+			this->Nome = (gcnew System::Windows::Forms::ColumnHeader());
+			this->Tipo = (gcnew System::Windows::Forms::ColumnHeader());
+			this->Custo = (gcnew System::Windows::Forms::ColumnHeader());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
-			// 
-			// dataGridView1
-			// 
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
-				this->Nome, this->Tipo,
-					this->Custo
-			});
-			this->dataGridView1->Location = System::Drawing::Point(12, 12);
-			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(352, 236);
-			this->dataGridView1->TabIndex = 0;
-			// 
-			// Nome
-			// 
-			this->Nome->HeaderText = L"Nome";
-			this->Nome->Name = L"Nome";
-			// 
-			// Tipo
-			// 
-			this->Tipo->HeaderText = L"Tipo";
-			this->Tipo->Name = L"Tipo";
-			// 
-			// Custo
-			// 
-			this->Custo->HeaderText = L"Custo";
-			this->Custo->Name = L"Custo";
 			// 
 			// btn_Cadastro
 			// 
@@ -137,6 +117,7 @@ namespace Project1 {
 			this->btn_Alterar->TabIndex = 2;
 			this->btn_Alterar->Text = L"Alterar";
 			this->btn_Alterar->UseVisualStyleBackColor = true;
+			this->btn_Alterar->Click += gcnew System::EventHandler(this, &MyForm1::btn_Alterar_Click);
 			// 
 			// btn_Excluir
 			// 
@@ -168,6 +149,10 @@ namespace Project1 {
 			// comboBox1
 			// 
 			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(6) {
+				L"Rolo compactador", L"Placa vibratória", L"Bobcat",
+					L"Retro-escavadeira", L"Martelete hidráulico", L"Serra clipper"
+			});
 			this->comboBox1->Location = System::Drawing::Point(85, 48);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(202, 21);
@@ -216,17 +201,47 @@ namespace Project1 {
 			this->label1->TabIndex = 6;
 			this->label1->Text = L"Nome";
 			// 
+			// listView1
+			// 
+			this->listView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::ColumnHeader^  >(4) {
+				this->ID, this->Nome, this->Tipo,
+					this->Custo
+			});
+			this->listView1->Location = System::Drawing::Point(12, 11);
+			this->listView1->Name = L"listView1";
+			this->listView1->Size = System::Drawing::Size(352, 224);
+			this->listView1->TabIndex = 5;
+			this->listView1->UseCompatibleStateImageBehavior = false;
+			this->listView1->View = System::Windows::Forms::View::Details;
+			this->listView1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm1::listView1_SelectedIndexChanged);
+			// 
+			// ID
+			// 
+			this->ID->Text = L"ID";
+			// 
+			// Nome
+			// 
+			this->Nome->Text = L"Nome";
+			// 
+			// Tipo
+			// 
+			this->Tipo->Text = L"Tipo";
+			// 
+			// Custo
+			// 
+			this->Custo->Text = L"Custo";
+			// 
 			// MyForm1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(701, 263);
+			this->Controls->Add(this->listView1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->btn_Excluir);
-			this->Controls->Add(this->dataGridView1);
 			this->Name = L"MyForm1";
 			this->Text = L"Equipamentos";
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			this->Load += gcnew System::EventHandler(this, &MyForm1::MyForm1_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->ResumeLayout(false);
@@ -236,33 +251,94 @@ namespace Project1 {
 	private: System::Void btn_Cadastro_Click(System::Object^  sender, System::EventArgs^  e) {
 
 		Controle_CU14* controle = Controle_CU14::getInstance();
-		controle->insereEquipamento(to_str(this->textBox1->Text), "GRANDE", to_str(this->textBox2->Text));
-		//ControleEquipamento.insere(msclr::interop::marshal_as<std::string>(this->textBox1->Text), msclr::interop::marshal_as<std::string>(this->textBox2->Text));
-		//ControleEquipamento.insere(msclr::interop::marshal_as<std::string>(this->textBox1->Text), msclr::interop::marshal_as<std::string>(this->textBox2->Text));
 
-		/*
-		sql::Connection * connection;
-		sql::Statement* statement;
-		sql::PreparedStatement * preparedStatement;
-		sql::ResultSet *resultSet;
+		if (textBox1->Text == String::Empty || comboBox1->Text == String::Empty || textBox2->Text == String::Empty) {
+			MessageBox::Show("Preencha todos os campos", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+		else {
+			controle->insereEquipamento(to_str(this->textBox1->Text), to_str(this->comboBox1->Text), to_str(this->textBox2->Text));
+			MessageBox::Show("Novo registro inserido");
+		}
 
-		MySQLDAO* mysqldao = MySQLDAO::getInstance();
-		connection = mysqldao->getConnection();
-		preparedStatement = connection->prepareStatement("insert into Equipamento (NOME, TIPO, CUSTO_MANUTENCAO) values (?,'GRANDE',?)");
-
-//		msclr::interop::marshal_as<std::string>(this->textBox1->Text)
-
-		preparedStatement->setString(1, msclr::interop::marshal_as<std::string>(this->textBox1->Text).c_str());
-		preparedStatement->setString(2, msclr::interop::marshal_as<std::string>(this->textBox2->Text).c_str());
-
-		preparedStatement->execute();
-		//*/
+		item_selecionado = false;
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ id;
+		Controle_CU14* controle = Controle_CU14::getInstance();
+
+		if (item_selecionado) {
+			id = listView1->FocusedItem->Text;
+			if (MessageBox::Show("Deseja excluir o item de ID " + id,"Excluir",MessageBoxButtons::YesNo) == System::Windows::Forms::DialogResult::Yes) {
+				controle->excluiEquipamento(to_str(id));
+				MessageBox::Show("Excluido");
+			}
+			item_selecionado = false;
+		}
+		else {
+			MessageBox::Show("Selecione um item", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
 	}
 private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void textBox2_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void MyForm1_Load(System::Object^  sender, System::EventArgs^  e) {
+	atualizaDataGrid();
+}
+
+	private: System::Void atualizaDataGrid() {
+		Controle_CU14* controle = Controle_CU14::getInstance();
+		ResultSet* listaEquip = controle->selecionarEquipamento();
+
+		int id;
+		String^ nome;
+		String^ tipo;
+		float custo;
+
+		//listView1->Clear();
+
+		while (listaEquip->next()) {
+			id = listaEquip->getInt("ID_EQUIPAMENTO");
+			nome = gcnew String(listaEquip->getString("NOME").c_str());
+			tipo = gcnew String(listaEquip->getString("TIPO").c_str());
+			custo = (float) listaEquip->getDouble("CUSTO_MANUTENCAO");
+
+			ListViewItem^ item = gcnew ListViewItem(gcnew String(id.ToString()));
+			item->SubItems->Add(nome);
+			item->SubItems->Add(tipo);
+			item->SubItems->Add(gcnew String(custo.ToString()));
+			listView1->Items->Add(item);
+		}
+	}
+
+private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	item_selecionado = true;
+}
+private: System::Void btn_Alterar_Click(System::Object^  sender, System::EventArgs^  e) {
+	String^ id;
+	Controle_CU14* controle = Controle_CU14::getInstance();
+
+	if (item_selecionado) {
+		if (textBox1->Text == String::Empty || comboBox1->Text == String::Empty || textBox2->Text == String::Empty) {
+			MessageBox::Show("Preencha todos os campos", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+		else {
+			id = listView1->FocusedItem->Text;
+			if (MessageBox::Show("Deseja alterar o item de ID " + id, "Alterar", MessageBoxButtons::YesNo) == System::Windows::Forms::DialogResult::Yes) {
+				controle->alteraEquipamento(to_str(id), to_str(this->textBox1->Text), to_str(this->comboBox1->Text), to_str(this->textBox2->Text));
+				MessageBox::Show("Registro ID nº "+ id +" alterado");
+			}
+		}
+		
+		item_selecionado = false;
+	}
+	else {
+		MessageBox::Show("Selecione um item", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+	}
+
+	
+
+	item_selecionado = false;
 }
 };
 }
