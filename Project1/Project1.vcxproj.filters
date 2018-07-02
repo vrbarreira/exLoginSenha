@@ -207,6 +207,9 @@
     <ClCompile Include="DAO_Material.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DAO_Funcionario.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -405,6 +408,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DAO_Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DAO_Funcionario.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
