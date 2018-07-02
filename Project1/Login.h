@@ -4,6 +4,9 @@
 #include "CaixaDeDialogo.h"
 #include "MenuPrincipal.h"
 #include "MySQLDAO.h"
+#include "CU20.h"
+
+#define to_str(a) msclr::interop::marshal_as<std::string>(a)
 
 /*
 Referência: http://www.visualcplusdotnet.com/visualcplusdotnet21.html
@@ -245,21 +248,7 @@ private: System::Void bt_limpar_Click(System::Object^  sender, System::EventArgs
 
 }
 private: System::Void bt_validar_Click(System::Object^  sender, System::EventArgs^  e) {
-	/*
-	sql::Connection * connection;
-	sql::Statement* statement;
-	sql::PreparedStatement * preparedStatement;
-	sql::ResultSet *resultSet;
-//	try {
-
-		//Pegar conexão
-		MySQLDAO* mysqldao = MySQLDAO::getInstance();
-		connection = mysqldao->getConnection();
-		preparedStatement = connection->prepareStatement("insert into Equipamento (NOME, TIPO, CUSTO_MANUTENCAO) values ('Britadera','ZZK9000',350.14)");
-
-		preparedStatement->execute();
-
-		*/
+	CU20* controle = CU20::getInstance();
 
 	if ((this->tb_login->Text == String::Empty) && (this -> tb_senha->Text == String::Empty)) {
 		this->tb_mensagem->AppendText("\r\nCampos de Login e senha vazios");
@@ -273,6 +262,11 @@ private: System::Void bt_validar_Click(System::Object^  sender, System::EventArg
 	}
 	else if (this->tb_senha->Text == String::Empty) {
 		this->tb_mensagem->AppendText("\r\nCampo de Senha Vazio");
+		tb_senha->BackColor = System::Drawing::Color::Yellow;
+	}
+	else if (!controle->validarSenha(to_str(this->tb_login->Text), to_str(this->tb_senha->Text)))
+	{
+		this->tb_mensagem->AppendText("\r\nLogin e/ou senha inválidos");
 		tb_senha->BackColor = System::Drawing::Color::Yellow;
 	}
 	else {

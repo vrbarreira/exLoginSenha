@@ -13,8 +13,12 @@ Equipamento::Equipamento()
     //TODO Auto-generated method stub
 }
 
-Equipamento::Equipamento(int id, string nome, string tipo, float custoDeManutenção) : Recursos(id), nome(nome), tipo(tipo), custoDeManutenção(custoDeManutenção)
+Equipamento::Equipamento(int id, string nome, string tipo, float custoDeManutenção)
 {
+	Recursos::id = id;
+	this->nome = nome;
+	this->tipo = tipo;
+	this->custoDeManutenção = custoDeManutenção;
 }
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
@@ -24,13 +28,13 @@ Equipamento::~Equipamento()
 }
 
 int Equipamento::get_id() {
-	return Recursos::get_id();
+	return Recursos::id;
 }
 
 void Equipamento::set_id(int id)
 {
 	//TODO Auto-generated method stub
-	Recursos::set_id(id);
+	Recursos::id = id;
 }
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"

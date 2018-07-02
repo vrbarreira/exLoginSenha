@@ -201,6 +201,9 @@
     <ClCompile Include="Usuário.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DAO_Usuario.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -393,6 +396,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Usuário.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DAO_Usuario.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

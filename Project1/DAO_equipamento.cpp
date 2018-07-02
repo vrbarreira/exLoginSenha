@@ -6,10 +6,6 @@ using std::string;
 using sql::ResultSet;
 
 DAO_Equipamento* DAO_Equipamento::instance = 0;
-sql::Connection * connection;
-sql::Statement* statement;
-sql::PreparedStatement * preparedStatement;
-sql::ResultSet *resultSet;
 
 DAO_Equipamento::~DAO_Equipamento()
 {
@@ -23,9 +19,10 @@ DAO_Equipamento* DAO_Equipamento::getInstance()
 }
 
 ResultSet* DAO_Equipamento::selecionarEquipamento() {
-	int id;
-	string nome, tipo;
-	float custo;
+	sql::Connection * connection;
+	sql::Statement* statement;
+	sql::PreparedStatement * preparedStatement;
+	sql::ResultSet *resultSet;
 
 	MySQLDAO* mysqldao = MySQLDAO::getInstance();
 	connection = mysqldao->getConnection();
@@ -37,6 +34,11 @@ ResultSet* DAO_Equipamento::selecionarEquipamento() {
 }
 
 void DAO_Equipamento::insereEquipamento(string nome, string tipo, string custoDeManutencao) {
+	sql::Connection * connection;
+	sql::Statement* statement;
+	sql::PreparedStatement * preparedStatement;
+	sql::ResultSet *resultSet;
+	
 	MySQLDAO* mysqldao = MySQLDAO::getInstance();
 	connection = mysqldao->getConnection();
 	
@@ -50,6 +52,11 @@ void DAO_Equipamento::insereEquipamento(string nome, string tipo, string custoDe
 }
 
 void DAO_Equipamento::alteraEquipamento(string id, string nome, string tipo, string custoDeManutencao) {
+	sql::Connection * connection;
+	sql::Statement* statement;
+	sql::PreparedStatement * preparedStatement;
+	sql::ResultSet *resultSet;
+	
 	MySQLDAO* mysqldao = MySQLDAO::getInstance();
 	connection = mysqldao->getConnection();
 
@@ -64,6 +71,11 @@ void DAO_Equipamento::alteraEquipamento(string id, string nome, string tipo, str
 }
 
 void DAO_Equipamento::excluiEquipamento(string id) {
+	sql::Connection * connection;
+	sql::Statement* statement;
+	sql::PreparedStatement * preparedStatement;
+	sql::ResultSet *resultSet;
+	
 	MySQLDAO* mysqldao = MySQLDAO::getInstance();
 	connection = mysqldao->getConnection();
 

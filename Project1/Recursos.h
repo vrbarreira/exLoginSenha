@@ -14,7 +14,7 @@ class Recursos
     //TODO: Add attributes that you want preserved
     //End section for Recursos
 
-    private:
+    protected:
 
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
