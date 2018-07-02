@@ -4,7 +4,11 @@
 //TODO: Add definitions that you want preserved
 //End section for file CU17.h
 
-
+#include "DAO_Material.h"
+#include <iostream>
+#include <string>
+using namespace std;
+using sql::ResultSet;
 
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
@@ -14,9 +18,11 @@ class CU17
     //TODO: Add attributes that you want preserved
     //End section for CU17
 
-
+	private:
+		static CU17 * instance;
 
     public:
+		static CU17* getInstance();
 
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         CU17(); 
@@ -26,40 +32,11 @@ class CU17
         //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
         virtual ~CU17(); 
 
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getTipo(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getCusto(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getQuantidade(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getUnidade(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void alterarDados(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void getListaMateriais(); 
-
-
-
-        //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-        void excluirMaterial(); 
+		ResultSet* selecionarMaterial();
+		void insereMaterial(string tipo, string unidadeMedida, string custoPorMedida, string qtdEstoque);
+		void alteraMaterial(string tipo, string unidadeMedida, string custoPorMedida);
+		void alteraMaterial(string tipo, string qtdEstoque);
+		void excluiMaterial(string id);
 
 
 
