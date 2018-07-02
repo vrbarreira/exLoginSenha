@@ -139,6 +139,7 @@ namespace Project1 {
 			this->button3->TabIndex = 12;
 			this->button3->Text = L"Excluir";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &CRUDFuncionarios::button3_Click);
 			// 
 			// button2
 			// 
@@ -360,6 +361,22 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 
 
 	item_selecionado = false;
+}
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+	String^ id;
+	CU18* controle = CU18::getInstance();
+
+	if (item_selecionado) {
+		id = listView1->FocusedItem->Text;
+		if (MessageBox::Show("Deseja excluir o item de ID " + id, "Excluir", MessageBoxButtons::YesNo) == System::Windows::Forms::DialogResult::Yes) {
+			controle->excluiFuncionario(to_str(id));
+			MessageBox::Show("Excluido");
+		}
+		item_selecionado = false;
+	}
+	else {
+		MessageBox::Show("Selecione um item", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+	}
 }
 };
 }
