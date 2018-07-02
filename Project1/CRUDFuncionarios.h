@@ -148,6 +148,7 @@ namespace Project1 {
 			this->button2->TabIndex = 11;
 			this->button2->Text = L"Alterar";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &CRUDFuncionarios::button2_Click);
 			// 
 			// button1
 			// 
@@ -333,6 +334,32 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 	item_selecionado = true;
+}
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+	String^ id;
+	CU18* controle = CU18::getInstance();
+
+	if (item_selecionado) {
+		if (textBox2->Text == String::Empty || textBox3->Text == String::Empty || textBox4->Text == String::Empty || comboBox1->Text == String::Empty) {
+			MessageBox::Show("Preencha todos os campos", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+		else {
+			id = listView1->FocusedItem->Text;
+			if (MessageBox::Show("Deseja alterar o item de ID " + id, "Alterar", MessageBoxButtons::YesNo) == System::Windows::Forms::DialogResult::Yes) {
+				controle->alteraFuncionario(to_str(id), to_str(textBox2->Text), to_str(textBox3->Text), to_str(textBox4->Text), to_str(comboBox1->Text));
+				MessageBox::Show("Registro ID nº " + id + " alterado");
+			}
+		}
+
+		item_selecionado = false;
+	}
+	else {
+		MessageBox::Show("Selecione um item", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+	}
+
+
+
+	item_selecionado = false;
 }
 };
 }
