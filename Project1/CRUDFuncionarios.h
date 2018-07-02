@@ -59,8 +59,8 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::TextBox^  textBox2;
 	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::TextBox^  textBox1;
-	private: System::Windows::Forms::Label^  label1;
+
+
 	private: System::Windows::Forms::Button^  button3;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button1;
@@ -71,6 +71,8 @@ namespace Project1 {
 	private: System::Windows::Forms::ColumnHeader^  Salario;
 	private: System::Windows::Forms::ColumnHeader^  Categoria;
 	private: System::Windows::Forms::ColumnHeader^  Equipe;
+
+	private: bool item_selecionado;
 
 	protected:
 
@@ -99,8 +101,6 @@ namespace Project1 {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->listView1 = (gcnew System::Windows::Forms::ListView());
 			this->ID = (gcnew System::Windows::Forms::ColumnHeader());
 			this->Nome = (gcnew System::Windows::Forms::ColumnHeader());
@@ -124,8 +124,6 @@ namespace Project1 {
 			this->groupBox1->Controls->Add(this->label3);
 			this->groupBox1->Controls->Add(this->textBox2);
 			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->textBox1);
-			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Location = System::Drawing::Point(467, 12);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(253, 193);
@@ -159,11 +157,12 @@ namespace Project1 {
 			this->button1->TabIndex = 10;
 			this->button1->Text = L"Cadastrar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &CRUDFuncionarios::button1_Click);
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(6, 135);
+			this->label5->Location = System::Drawing::Point(6, 101);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(52, 13);
 			this->label5->TabIndex = 9;
@@ -172,14 +171,14 @@ namespace Project1 {
 			// comboBox1
 			// 
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(87, 132);
+			this->comboBox1->Location = System::Drawing::Point(87, 98);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(159, 21);
 			this->comboBox1->TabIndex = 8;
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(87, 105);
+			this->textBox4->Location = System::Drawing::Point(87, 71);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(159, 20);
 			this->textBox4->TabIndex = 7;
@@ -187,7 +186,7 @@ namespace Project1 {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(6, 108);
+			this->label4->Location = System::Drawing::Point(6, 74);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(39, 13);
 			this->label4->TabIndex = 6;
@@ -195,7 +194,7 @@ namespace Project1 {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(87, 79);
+			this->textBox3->Location = System::Drawing::Point(87, 45);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(159, 20);
 			this->textBox3->TabIndex = 5;
@@ -203,7 +202,7 @@ namespace Project1 {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(6, 82);
+			this->label3->Location = System::Drawing::Point(6, 48);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(27, 13);
 			this->label3->TabIndex = 4;
@@ -211,7 +210,7 @@ namespace Project1 {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(87, 53);
+			this->textBox2->Location = System::Drawing::Point(87, 19);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(160, 20);
 			this->textBox2->TabIndex = 3;
@@ -219,27 +218,11 @@ namespace Project1 {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(6, 56);
+			this->label2->Location = System::Drawing::Point(6, 22);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(35, 13);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"Nome";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(87, 27);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(159, 20);
-			this->textBox1->TabIndex = 1;
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(6, 30);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(18, 13);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"ID";
 			// 
 			// listView1
 			// 
@@ -253,6 +236,7 @@ namespace Project1 {
 			this->listView1->TabIndex = 3;
 			this->listView1->UseCompatibleStateImageBehavior = false;
 			this->listView1->View = System::Windows::Forms::View::Details;
+			this->listView1->SelectedIndexChanged += gcnew System::EventHandler(this, &CRUDFuncionarios::listView1_SelectedIndexChanged);
 			// 
 			// ID
 			// 
@@ -333,6 +317,22 @@ namespace Project1 {
 
 private: System::Void CRUDFuncionarios_Load(System::Object^  sender, System::EventArgs^  e) {
 	atualizaDataGrid();
+}
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	CU18* controle = CU18::getInstance();
+
+	if (textBox2->Text == String::Empty || textBox3->Text == String::Empty || textBox4->Text == String::Empty || comboBox1->Text == String::Empty) {
+		MessageBox::Show("Preencha todos os campos", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+	}
+	else {
+		controle->insereFuncionario(to_str(textBox2->Text), to_str(textBox3->Text), to_str(textBox4->Text), to_str(comboBox1->Text));
+		MessageBox::Show("Novo registro inserido");
+	}
+
+	item_selecionado = false;
+}
+private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	item_selecionado = true;
 }
 };
 }
