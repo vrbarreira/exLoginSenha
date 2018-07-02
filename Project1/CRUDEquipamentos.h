@@ -295,8 +295,6 @@ private: System::Void MyForm1_Load(System::Object^  sender, System::EventArgs^  
 		String^ tipo;
 		float custo;
 
-		//listView1->Clear();
-
 		while (listaEquip->next()) {
 			id = listaEquip->getInt("ID_EQUIPAMENTO");
 			nome = gcnew String(listaEquip->getString("NOME").c_str());

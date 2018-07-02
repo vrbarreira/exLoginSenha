@@ -175,6 +175,7 @@
     <ClCompile Include="CU21.cpp" />
     <ClCompile Include="CU22.cpp" />
     <ClCompile Include="DAO_equipamento.cpp" />
+    <ClCompile Include="DAO_Equipe.cpp" />
     <ClCompile Include="DAO_Funcionario.cpp" />
     <ClCompile Include="DAO_Material.cpp" />
     <ClCompile Include="DAO_Usuario.cpp" />
@@ -252,6 +253,7 @@
     <ClInclude Include="CU21.h" />
     <ClInclude Include="CU22.h" />
     <ClInclude Include="DAO_equipamento.h" />
+    <ClInclude Include="DAO_Equipe.h" />
     <ClInclude Include="DAO_Funcionario.h" />
     <ClInclude Include="DAO_Material.h" />
     <ClInclude Include="DAO_Usuario.h" />

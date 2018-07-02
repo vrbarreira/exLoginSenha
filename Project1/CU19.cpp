@@ -2,7 +2,9 @@
 //Begin section for file CU19.cpp
 //TODO: Add definitions that you want preserved
 //End section for file CU19.cpp
+using sql::ResultSet;
 
+CU19* CU19::instance = 0;
 
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
 CU19::CU19() 
@@ -15,50 +17,30 @@ CU19::~CU19()
     //TODO Auto-generated method stub
 }
 //@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::getNome() 
+
+CU19* CU19::getInstance()
 {
-    //TODO Auto-generated method stub
-    return;
+	if (instance == 0)
+		instance = new CU19();
+	return instance;
 }
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::getNumTrabalhadores() 
-{
-    //TODO Auto-generated method stub
-    return;
+
+ResultSet* CU19::selecionarEquipe() {
+	DAO_Equipe* dao = DAO_Equipe::getInstance();
+	return dao->selecionarEquipe();
 }
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::getCustoHora() 
-{
-    //TODO Auto-generated method stub
-    return;
+
+void CU19::insereEquipe(string nome, string numTrab, string custoDesloc, string custoHora, string horarioServ, string horarioTerm) {
+	DAO_Equipe* dao = DAO_Equipe::getInstance();
+	dao->insereEquipe(nome, numTrab, custoDesloc, custoHora, horarioServ, horarioTerm);
 }
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::getCustoDeslocamento() 
-{
-    //TODO Auto-generated method stub
-    return;
+
+void CU19::alteraEquipe(string id, string nome, string numTrab, string custoDesloc, string custoHora, string horarioServ, string horarioTerm) {
+	DAO_Equipe* dao = DAO_Equipe::getInstance();
+	dao->alteraEquipe(id, nome, numTrab, custoDesloc, custoHora, horarioServ, horarioTerm);
 }
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::getHorarioServico() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::alterarDados() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::getListaEquipes() 
-{
-    //TODO Auto-generated method stub
-    return;
-}
-//@generated "UML to C++ (com.ibm.xtools.transform.uml2.cpp.CPPTransformation)"
-void CU19::excluirEquipe() 
-{
-    //TODO Auto-generated method stub
-    return;
+
+void CU19::excluiEquipe(string id) {
+	DAO_Equipe* dao = DAO_Equipe::getInstance();
+	dao->excluiEquipe(id);
 }
