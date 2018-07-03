@@ -58,7 +58,8 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^  btnNovoBuraco;
 	private: System::Windows::Forms::Button^  button9;
 	private: System::Windows::Forms::Button^  button8;
-	private: System::Windows::Forms::Button^  button7;
+
+	private: System::Windows::Forms::Button^  button10;
 
 
 	private:
@@ -85,8 +86,8 @@ namespace Project1 {
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->button8 = (gcnew System::Windows::Forms::Button());
-			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->btnNovoBuraco = (gcnew System::Windows::Forms::Button());
+			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->groupBox3->SuspendLayout();
@@ -177,9 +178,9 @@ namespace Project1 {
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->button10);
 			this->groupBox3->Controls->Add(this->button9);
 			this->groupBox3->Controls->Add(this->button8);
-			this->groupBox3->Controls->Add(this->button7);
 			this->groupBox3->Controls->Add(this->btnNovoBuraco);
 			this->groupBox3->Location = System::Drawing::Point(12, 176);
 			this->groupBox3->Name = L"groupBox3";
@@ -208,16 +209,6 @@ namespace Project1 {
 			this->button8->UseVisualStyleBackColor = true;
 			this->button8->Click += gcnew System::EventHandler(this, &MenuPrincipal::button8_Click);
 			// 
-			// button7
-			// 
-			this->button7->Location = System::Drawing::Point(6, 19);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(112, 52);
-			this->button7->TabIndex = 7;
-			this->button7->Text = L"Ordens de serviço pendentes";
-			this->button7->UseVisualStyleBackColor = true;
-			this->button7->Click += gcnew System::EventHandler(this, &MenuPrincipal::button7_Click);
-			// 
 			// btnNovoBuraco
 			// 
 			this->btnNovoBuraco->Location = System::Drawing::Point(6, 89);
@@ -227,6 +218,16 @@ namespace Project1 {
 			this->btnNovoBuraco->Text = L"Registrar novo\r\nburaco";
 			this->btnNovoBuraco->UseVisualStyleBackColor = true;
 			this->btnNovoBuraco->Click += gcnew System::EventHandler(this, &MenuPrincipal::button7_Click);
+			// 
+			// button10
+			// 
+			this->button10->Location = System::Drawing::Point(6, 19);
+			this->button10->Name = L"button10";
+			this->button10->Size = System::Drawing::Size(112, 52);
+			this->button10->TabIndex = 10;
+			this->button10->Text = L"Ordens de serviço pendentes";
+			this->button10->UseVisualStyleBackColor = true;
+			this->button10->Click += gcnew System::EventHandler(this, &MenuPrincipal::button10_Click);
 			// 
 			// MenuPrincipal
 			// 
@@ -279,6 +280,10 @@ private: System::Void button9_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
 	CadastroBuracos ^ form = gcnew CadastroBuracos;
+	form->ShowDialog();
+}
+private: System::Void button10_Click(System::Object^  sender, System::EventArgs^  e) {
+	OS1_1 ^ form = gcnew OS1_1;
 	form->ShowDialog();
 }
 };
