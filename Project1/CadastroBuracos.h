@@ -34,7 +34,7 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::ListBox^  listBox1;
+
 	protected:
 	private: System::Windows::Forms::GroupBox^  groupBox1;
 	private: System::Windows::Forms::TextBox^  textBox1;
@@ -56,6 +56,8 @@ namespace Project1 {
 	private: System::Windows::Forms::TextBox^  textBox2;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::ListView^  listView1;
+	private: System::Windows::Forms::ColumnHeader^  columnHeader1;
 
 	private:
 		/// <summary>
@@ -70,37 +72,30 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
-			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->listView1 = (gcnew System::Windows::Forms::ListView());
+			this->columnHeader1 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
-			// 
-			// listBox1
-			// 
-			this->listBox1->FormattingEnabled = true;
-			this->listBox1->Location = System::Drawing::Point(12, 12);
-			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(275, 303);
-			this->listBox1->TabIndex = 0;
 			// 
 			// groupBox1
 			// 
@@ -129,119 +124,21 @@ namespace Project1 {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Dados";
 			// 
-			// label1
+			// comboBox2
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(7, 20);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(18, 13);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"ID";
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Location = System::Drawing::Point(144, 172);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(158, 21);
+			this->comboBox2->TabIndex = 17;
 			// 
-			// textBox1
+			// comboBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(144, 17);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(158, 20);
-			this->textBox1->TabIndex = 1;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(144, 43);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(158, 20);
-			this->textBox2->TabIndex = 3;
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(7, 46);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(37, 13);
-			this->label2->TabIndex = 2;
-			this->label2->Text = L"Status";
-			// 
-			// textBox3
-			// 
-			this->textBox3->Location = System::Drawing::Point(144, 69);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(158, 20);
-			this->textBox3->TabIndex = 5;
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(7, 72);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(53, 13);
-			this->label3->TabIndex = 4;
-			this->label3->Text = L"Endereço";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(7, 98);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(52, 13);
-			this->label4->TabIndex = 6;
-			this->label4->Text = L"Tamanho";
-			// 
-			// textBox5
-			// 
-			this->textBox5->Location = System::Drawing::Point(144, 121);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(158, 20);
-			this->textBox5->TabIndex = 9;
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(7, 124);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(127, 13);
-			this->label5->TabIndex = 8;
-			this->label5->Text = L"Número de Reclamações";
-			// 
-			// textBox6
-			// 
-			this->textBox6->Location = System::Drawing::Point(144, 147);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(158, 20);
-			this->textBox6->TabIndex = 11;
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(7, 150);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(41, 13);
-			this->label6->TabIndex = 10;
-			this->label6->Text = L"Região";
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(7, 176);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(78, 13);
-			this->label7->TabIndex = 4;
-			this->label7->Text = L"Posição na Via";
-			// 
-			// textBox8
-			// 
-			this->textBox8->Location = System::Drawing::Point(144, 199);
-			this->textBox8->Name = L"textBox8";
-			this->textBox8->Size = System::Drawing::Size(158, 20);
-			this->textBox8->TabIndex = 13;
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(7, 202);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(125, 13);
-			this->label8->TabIndex = 12;
-			this->label8->Text = L"Número de Recorrências";
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(144, 95);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(158, 21);
+			this->comboBox1->TabIndex = 16;
 			// 
 			// textBox9
 			// 
@@ -259,21 +156,119 @@ namespace Project1 {
 			this->label9->TabIndex = 14;
 			this->label9->Text = L"Número de Reincidências";
 			// 
-			// comboBox1
+			// textBox8
 			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(144, 95);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(158, 21);
-			this->comboBox1->TabIndex = 16;
+			this->textBox8->Location = System::Drawing::Point(144, 199);
+			this->textBox8->Name = L"textBox8";
+			this->textBox8->Size = System::Drawing::Size(158, 20);
+			this->textBox8->TabIndex = 13;
 			// 
-			// comboBox2
+			// label8
 			// 
-			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Location = System::Drawing::Point(144, 172);
-			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(158, 21);
-			this->comboBox2->TabIndex = 17;
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(7, 202);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(125, 13);
+			this->label8->TabIndex = 12;
+			this->label8->Text = L"Número de Recorrências";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(7, 176);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(78, 13);
+			this->label7->TabIndex = 4;
+			this->label7->Text = L"Posição na Via";
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(144, 147);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(158, 20);
+			this->textBox6->TabIndex = 11;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(7, 150);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(41, 13);
+			this->label6->TabIndex = 10;
+			this->label6->Text = L"Região";
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(144, 121);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(158, 20);
+			this->textBox5->TabIndex = 9;
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(7, 124);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(127, 13);
+			this->label5->TabIndex = 8;
+			this->label5->Text = L"Número de Reclamações";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(7, 98);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(52, 13);
+			this->label4->TabIndex = 6;
+			this->label4->Text = L"Tamanho";
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(144, 69);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(158, 20);
+			this->textBox3->TabIndex = 5;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(7, 72);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(53, 13);
+			this->label3->TabIndex = 4;
+			this->label3->Text = L"Endereço";
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(144, 43);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(158, 20);
+			this->textBox2->TabIndex = 3;
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(7, 46);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(37, 13);
+			this->label2->TabIndex = 2;
+			this->label2->Text = L"Status";
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(144, 17);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(158, 20);
+			this->textBox1->TabIndex = 1;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(7, 20);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(18, 13);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"ID";
 			// 
 			// button1
 			// 
@@ -283,15 +278,30 @@ namespace Project1 {
 			this->button1->TabIndex = 2;
 			this->button1->Text = L"Cadastrar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &CadastroBuracos::button1_Click);
+			// 
+			// listView1
+			// 
+			this->listView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::ColumnHeader^  >(1) { this->columnHeader1 });
+			this->listView1->Location = System::Drawing::Point(12, 12);
+			this->listView1->Name = L"listView1";
+			this->listView1->Size = System::Drawing::Size(265, 308);
+			this->listView1->TabIndex = 3;
+			this->listView1->UseCompatibleStateImageBehavior = false;
+			this->listView1->View = System::Windows::Forms::View::Details;
+			// 
+			// columnHeader1
+			// 
+			this->columnHeader1->Text = L"ID";
 			// 
 			// CadastroBuracos
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(613, 332);
+			this->Controls->Add(this->listView1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->groupBox1);
-			this->Controls->Add(this->listBox1);
 			this->Name = L"CadastroBuracos";
 			this->Text = L"Cadastrar buraco";
 			this->groupBox1->ResumeLayout(false);
@@ -300,5 +310,7 @@ namespace Project1 {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 }

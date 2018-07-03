@@ -278,7 +278,7 @@ private: System::Void button9_Click(System::Object^  sender, System::EventArgs^ 
 	caixa->ShowDialog();
 }
 private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
-	OS1_1 ^ form = gcnew OS1_1;
+	CadastroBuracos ^ form = gcnew CadastroBuracos;
 	form->ShowDialog();
 }
 };
