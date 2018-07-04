@@ -28,7 +28,7 @@ ResultSet* DAO_Buraco::selecionarBuraco() {
 	connection = mysqldao->getConnection();
 
 	statement = connection->createStatement();
-	resultSet = statement->executeQuery("SELECT ID_Buraco, NOME, TIPO, CUSTO_MANUTENCAO FROM Buraco ORDER BY ID_Buraco ASC");
+	resultSet = statement->executeQuery("SELECT ID_BURACO, ENDERECO, POSICAO_VIA FROM Buraco ORDER BY ID_Buraco ASC");
 
 	return resultSet;
 }
