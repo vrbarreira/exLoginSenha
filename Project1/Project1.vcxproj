@@ -150,6 +150,7 @@
     <ClCompile Include="CadastroBuracos.cpp" />
     <ClCompile Include="CaixaDeDialogo.cpp" />
     <ClCompile Include="Cidadao.cpp" />
+    <ClCompile Include="Controle_CU02.cpp" />
     <ClCompile Include="Controle_CU14.cpp" />
     <ClCompile Include="CRUDEquipes.cpp" />
     <ClCompile Include="CRUDFuncionarios.cpp" />
@@ -174,6 +175,7 @@
     <ClCompile Include="CU20.cpp" />
     <ClCompile Include="CU21.cpp" />
     <ClCompile Include="CU22.cpp" />
+    <ClCompile Include="DAO_Buraco.cpp" />
     <ClCompile Include="DAO_equipamento.cpp" />
     <ClCompile Include="DAO_Equipe.cpp" />
     <ClCompile Include="DAO_Funcionario.cpp" />
@@ -222,6 +224,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Cidadao.h" />
+    <ClInclude Include="Controle_CU02.h" />
     <ClInclude Include="Controle_CU14.h" />
     <ClInclude Include="CRUDEquipes.h">
       <FileType>CppForm</FileType>
@@ -252,6 +255,7 @@
     <ClInclude Include="CU20.h" />
     <ClInclude Include="CU21.h" />
     <ClInclude Include="CU22.h" />
+    <ClInclude Include="DAO_Buraco.h" />
     <ClInclude Include="DAO_equipamento.h" />
     <ClInclude Include="DAO_Equipe.h" />
     <ClInclude Include="DAO_Funcionario.h" />
