@@ -317,7 +317,7 @@ namespace Project1 {
 				MessageBox::Show("Novo buraco inserido");
 			}
 			else {
-				//controle->alteraBuraco(to_str(this->textBox1->Text), to_str(this->comboBox1->Text));
+				controle->alteraBuraco(to_str(this->textBox1->Text), to_str(this->comboBox1->Text));
 				MessageBox::Show("Buraco alterado");
 			}
 		}

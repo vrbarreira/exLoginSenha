@@ -63,7 +63,7 @@ void DAO_Buraco::alteraBuraco(string ID, string tamanho){
 	MySQLDAO* mysqldao = MySQLDAO::getInstance();
 	connection = mysqldao->getConnection();
 
-	preparedStatement = connection->prepareStatement("UPDATE Buraco SET NUM_RECLAMACOES = NUM_RECLAMACOES + 1, tamanho = '?' where ID_BURACO = ?");
+	preparedStatement = connection->prepareStatement("UPDATE Buraco SET NUM_RECLAMACOES=NUM_RECLAMACOES+1,TAMANHO=? where ID_BURACO = ?;");
 
 	preparedStatement->setString(1, tamanho.c_str());
 	preparedStatement->setString(2, ID.c_str());
