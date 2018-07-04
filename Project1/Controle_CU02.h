@@ -22,8 +22,8 @@ public:
 	virtual ~Controle_CU02();
 
 	ResultSet* selecionarBuraco();
-	void insereBuraco(string nome, string tipo, string custoDeManutencao);
-	void alteraBuraco(string id, string nome, string tipo, string custoDeManutencao);
+	void insereBuraco(string status, string endereco, string tamanho, string regiao, string posicao_via);
+	void alteraBuraco(string ID, string tamanho);
 	void excluiBuraco(string id);
 };
 

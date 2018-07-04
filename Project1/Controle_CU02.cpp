@@ -21,14 +21,22 @@ ResultSet* Controle_CU02::selecionarBuraco() {
 	return dao->selecionarBuraco();
 }
 
-void Controle_CU02::insereBuraco(string nome, string tipo, string custoDeManutencao) {
+void Controle_CU02::insereBuraco(string status, string endereco, string tamanho, string regiao, string posicao_via) {
+	int prioridade = 0;
+	if (tamanho[0] == 'g') prioridade = 1;
+	else if(tamanho[0]=='m') prioridade = 2;
+	else
+	{
+		prioridade = 3;
+	}
+
 	DAO_Buraco* dao = DAO_Buraco::getInstance();
-	dao->insereBuraco(nome, tipo, custoDeManutencao);
+	dao->insereBuraco(status,endereco,tamanho,"1",posicao_via,"1");
 }
 
-void Controle_CU02::alteraBuraco(string id, string nome, string tipo, string custoDeManutencao) {
+void Controle_CU02::alteraBuraco(string ID, string tamanho) {
 	DAO_Buraco* dao = DAO_Buraco::getInstance();
-	dao->alteraBuraco(id, nome, tipo, custoDeManutencao);
+	dao->alteraBuraco(ID, tamanho);
 }
 
 void Controle_CU02::excluiBuraco(string id) {

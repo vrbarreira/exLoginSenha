@@ -19,8 +19,8 @@ public:
 	virtual ~DAO_Buraco();
 
 	ResultSet* selecionarBuraco();
-	void insereBuraco(string nome, string tipo, string custoDeManutencao);
-	void alteraBuraco(string id, string nome, string tipo, string custoDeManutencao);
+	void insereBuraco(string nome, string endereco, string tamanho, string num_rec, string pos_via, string num_recor);
+	void alteraBuraco(string ID, string tamanho);
 	void excluiBuraco(string id);
 };
 

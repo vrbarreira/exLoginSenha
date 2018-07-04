@@ -1,4 +1,8 @@
 #pragma once
+#include <msclr\marshal_cppstd.h>
+#include <ctime>
+#include <iomanip>
+#include <sstream>
 
 #include "Controle_CU02.h"
 #define to_str(a) msclr::interop::marshal_as<std::string>(a)
@@ -46,8 +50,8 @@ namespace Project1 {
 	private: System::Windows::Forms::ComboBox^  comboBox1;
 
 
-	private: System::Windows::Forms::TextBox^  textBox8;
-	private: System::Windows::Forms::Label^  label8;
+
+
 	private: System::Windows::Forms::Label^  label7;
 
 	private: System::Windows::Forms::Label^  label6;
@@ -68,8 +72,12 @@ namespace Project1 {
 	private: System::Windows::Forms::ColumnHeader^  columnHeader1;
 	private: System::Windows::Forms::ColumnHeader^  columnHeader2;
 	private: System::Windows::Forms::ColumnHeader^  columnHeader3;
+
+
+	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::Label^  label1;
+
 
 	private:
 		/// <summary>
@@ -85,12 +93,12 @@ namespace Project1 {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->comboBox4 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
-			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
@@ -102,8 +110,7 @@ namespace Project1 {
 			this->columnHeader1 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader2 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader3 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -115,8 +122,6 @@ namespace Project1 {
 			this->groupBox1->Controls->Add(this->comboBox3);
 			this->groupBox1->Controls->Add(this->comboBox2);
 			this->groupBox1->Controls->Add(this->comboBox1);
-			this->groupBox1->Controls->Add(this->textBox8);
-			this->groupBox1->Controls->Add(this->label8);
 			this->groupBox1->Controls->Add(this->label7);
 			this->groupBox1->Controls->Add(this->label6);
 			this->groupBox1->Controls->Add(this->label4);
@@ -130,11 +135,27 @@ namespace Project1 {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Dados";
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(144, 34);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(158, 20);
+			this->textBox1->TabIndex = 21;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(11, 37);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(22, 13);
+			this->label1->TabIndex = 20;
+			this->label1->Text = L"ID*";
+			// 
 			// comboBox4
 			// 
 			this->comboBox4->FormattingEnabled = true;
 			this->comboBox4->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"novo", L"reaberto", L"reincidente" });
-			this->comboBox4->Location = System::Drawing::Point(144, 60);
+			this->comboBox4->Location = System::Drawing::Point(144, 62);
 			this->comboBox4->Name = L"comboBox4";
 			this->comboBox4->Size = System::Drawing::Size(158, 21);
 			this->comboBox4->TabIndex = 19;
@@ -143,7 +164,7 @@ namespace Project1 {
 			// 
 			this->comboBox3->FormattingEnabled = true;
 			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Norte", L"Sul", L"Leste" });
-			this->comboBox3->Location = System::Drawing::Point(144, 145);
+			this->comboBox3->Location = System::Drawing::Point(145, 147);
 			this->comboBox3->Name = L"comboBox3";
 			this->comboBox3->Size = System::Drawing::Size(158, 21);
 			this->comboBox3->TabIndex = 18;
@@ -152,7 +173,7 @@ namespace Project1 {
 			// 
 			this->comboBox2->FormattingEnabled = true;
 			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"centro", L"esquerda", L"direita" });
-			this->comboBox2->Location = System::Drawing::Point(144, 172);
+			this->comboBox2->Location = System::Drawing::Point(144, 174);
 			this->comboBox2->Name = L"comboBox2";
 			this->comboBox2->Size = System::Drawing::Size(158, 21);
 			this->comboBox2->TabIndex = 17;
@@ -161,26 +182,10 @@ namespace Project1 {
 			// 
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Pequeno", L"Médio", L"Grande" });
-			this->comboBox1->Location = System::Drawing::Point(144, 117);
+			this->comboBox1->Location = System::Drawing::Point(144, 119);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(158, 21);
 			this->comboBox1->TabIndex = 16;
-			// 
-			// textBox8
-			// 
-			this->textBox8->Location = System::Drawing::Point(144, 199);
-			this->textBox8->Name = L"textBox8";
-			this->textBox8->Size = System::Drawing::Size(158, 20);
-			this->textBox8->TabIndex = 13;
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(7, 202);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(125, 13);
-			this->label8->TabIndex = 12;
-			this->label8->Text = L"Número de Recorrências";
 			// 
 			// label7
 			// 
@@ -211,7 +216,7 @@ namespace Project1 {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(144, 91);
+			this->textBox3->Location = System::Drawing::Point(144, 93);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(158, 20);
 			this->textBox3->TabIndex = 5;
@@ -268,30 +273,24 @@ namespace Project1 {
 			// 
 			// columnHeader3
 			// 
-			this->columnHeader3->Text = L"Posição na via";
-			this->columnHeader3->Width = 116;
+			this->columnHeader3->Text = L"Posição via";
+			this->columnHeader3->Width = 76;
 			// 
-			// label1
+			// label5
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(7, 33);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(18, 13);
-			this->label1->TabIndex = 20;
-			this->label1->Text = L"ID";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(144, 30);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(158, 20);
-			this->textBox1->TabIndex = 21;
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(29, 293);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(204, 13);
+			this->label5->TabIndex = 21;
+			this->label5->Text = L"*Selecione o ID se o buraco é reincidente";
 			// 
 			// CadastroBuracos
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(613, 332);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->listView1);
 			this->Controls->Add(this->Inserir);
 			this->Controls->Add(this->groupBox1);
@@ -301,12 +300,29 @@ namespace Project1 {
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	//inserir
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		//Controle_CU02* controle = Controle_CU02::getInstance();
+		Controle_CU02* controle = Controle_CU02::getInstance();
+
+		if (comboBox1->Text == String::Empty || comboBox2->Text == String::Empty || comboBox3->Text == String::Empty || comboBox4->Text == String::Empty) {
+			MessageBox::Show("Preencha os campos necessários", "Aviso", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+		else {
+			if (to_str(this->comboBox4->Text) == "novo") {
+				controle->insereBuraco(to_str(this->comboBox4->Text), to_str(this->textBox3->Text), to_str(this->comboBox1->Text), to_str(this->comboBox3->Text), to_str(this->comboBox2->Text));
+				MessageBox::Show("Novo buraco inserido");
+			}
+			else {
+				//controle->alteraBuraco(to_str(this->textBox1->Text), to_str(this->comboBox1->Text));
+				MessageBox::Show("Buraco alterado");
+			}
+		}
+		CadastroBuracos_Load(sender, e);
+
 
 	}
 private: System::Void CadastroBuracos_Load(System::Object^  sender, System::EventArgs^  e) {
@@ -317,14 +333,20 @@ private: System::Void CadastroBuracos_Load(System::Object^  sender, System::Even
 	String^ endereco;
 	String^ posicao_via;
 
+	listView1->Items->Clear();
+
 	while (listaBur->next()) {
 		id = listaBur->getInt("ID_BURACO");
 		endereco = gcnew String(listaBur->getString("ENDERECO").c_str());
 		posicao_via = gcnew String(listaBur->getString("POSICAO_VIA").c_str());
+		//tamanho = gcnew String(listaBur->getString("TAMANHO").c_str());
+		//nrec = listaBur->getInt("NUM_RECLAMACOES");
 
 		ListViewItem^ item = gcnew ListViewItem(gcnew String(id.ToString()));
 		item->SubItems->Add(endereco);
 		item->SubItems->Add(posicao_via);
+		//item->SubItems->Add(tamanho);
+		//item->SubItems->Add(gcnew String(((double)nrec).ToString()));
 		listView1->Items->Add(item);
 	}
 }
