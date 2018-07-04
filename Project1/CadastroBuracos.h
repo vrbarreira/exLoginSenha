@@ -77,6 +77,8 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::TextBox^  textBox2;
+	private: System::Windows::Forms::Label^  label8;
 
 
 	private:
@@ -111,11 +113,15 @@ namespace Project1 {
 			this->columnHeader2 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader3 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->textBox2);
+			this->groupBox1->Controls->Add(this->label8);
 			this->groupBox1->Controls->Add(this->textBox1);
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Controls->Add(this->comboBox4);
@@ -284,6 +290,22 @@ namespace Project1 {
 			this->label5->Size = System::Drawing::Size(204, 13);
 			this->label5->TabIndex = 21;
 			this->label5->Text = L"*Selecione o ID se o buraco é reincidente";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(12, 206);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(27, 13);
+			this->label8->TabIndex = 22;
+			this->label8->Text = L"CPF";
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(144, 206);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(158, 20);
+			this->textBox2->TabIndex = 23;
 			// 
 			// CadastroBuracos
 			// 
