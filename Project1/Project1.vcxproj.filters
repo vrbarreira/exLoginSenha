@@ -219,6 +219,9 @@
     <ClCompile Include="DAO_Buraco.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DAO_OS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Janela4.h">
@@ -429,6 +432,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DAO_Buraco.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DAO_OS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

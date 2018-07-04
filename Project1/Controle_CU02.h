@@ -4,6 +4,7 @@
 #define Controle_CU02_H
 
 #include "DAO_Buraco.h"
+#include "DAO_OS.h"
 #include <iostream>
 #include <string>
 using namespace std;

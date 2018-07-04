@@ -180,6 +180,7 @@
     <ClCompile Include="DAO_Equipe.cpp" />
     <ClCompile Include="DAO_Funcionario.cpp" />
     <ClCompile Include="DAO_Material.cpp" />
+    <ClCompile Include="DAO_OS.cpp" />
     <ClCompile Include="DAO_Usuario.cpp" />
     <ClCompile Include="Despachador.cpp" />
     <ClCompile Include="Equipamento.cpp" />
@@ -260,6 +261,7 @@
     <ClInclude Include="DAO_Equipe.h" />
     <ClInclude Include="DAO_Funcionario.h" />
     <ClInclude Include="DAO_Material.h" />
+    <ClInclude Include="DAO_OS.h" />
     <ClInclude Include="DAO_Usuario.h" />
     <ClInclude Include="Despachador.h" />
     <ClInclude Include="Equipamento.h" />

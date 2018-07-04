@@ -32,6 +32,9 @@ void Controle_CU02::insereBuraco(string status, string endereco, string tamanho,
 
 	DAO_Buraco* dao = DAO_Buraco::getInstance();
 	dao->insereBuraco(status,endereco,tamanho,"1",posicao_via,"1");
+
+	DAO_OS* dao2 = DAO_OS::getInstance();
+	dao2->insereOS(to_string(prioridade),"Nao concluida");
 }
 
 void Controle_CU02::alteraBuraco(string ID, string tamanho) {
